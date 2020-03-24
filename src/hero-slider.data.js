@@ -1,4 +1,4 @@
-const HERO_SLIDER_PRODUCTS = [
+const HERO_SLIDER_ITEMS = [
     {
         id: 6,
         title: "JBL Bluetooth Stereophonic sound earphones",

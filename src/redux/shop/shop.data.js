@@ -1,5 +1,5 @@
 
-const STORE_PRODUCTS = [
+const SHOP_ITEMS = [
     {
         id: 1,
         title: "JBL Everest Elite 700 Headphones",
@@ -9,7 +9,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ const STORE_PRODUCTS = [
         color: "grey",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ const STORE_PRODUCTS = [
         color: "white",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 5,
@@ -53,18 +53,18 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"jbl",
         type: "earphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 6,
-        title: "JBL Bluetooth Stereophonic sound earphones",
+        title: "JBL connectWith Stereophonic sound earphones",
         price: 58,
         discount: 0,
         imageUrl: "https://i.imgur.com/O2NZRgP.png",
         color: "blue",
         brand:"jbl",
         type: "earphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 7,
@@ -75,7 +75,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"jbl",
         type: "earphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 8,
@@ -86,7 +86,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 9,
@@ -97,7 +97,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 10,
@@ -108,7 +108,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"jbl",
         type: "earphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 11,
@@ -119,7 +119,7 @@ const STORE_PRODUCTS = [
         color: "white",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 12,
@@ -130,7 +130,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"jbl",
         type: "earphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 13,
@@ -141,7 +141,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 14,
@@ -152,7 +152,7 @@ const STORE_PRODUCTS = [
         color: "green",
         brand:"jbl",
         type: "earphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 15,
@@ -163,7 +163,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"jbl",
         type: "earphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 16,
@@ -174,7 +174,7 @@ const STORE_PRODUCTS = [
         color: "red",
         brand:"jbl",
         type: "earphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 17,
@@ -185,18 +185,18 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"jbl",
         type: "earphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 18,
-        title: "JBL Evereste 750 pro bluetooth",
+        title: "JBL Evereste 750 pro connectWith",
         price: 98,
         discount: 0,
         imageUrl: "https://i.imgur.com/tbQR7Tf.png",
         color: "black",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 19,
@@ -207,7 +207,7 @@ const STORE_PRODUCTS = [
         color: "white",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 20,
@@ -218,7 +218,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 21,
@@ -229,7 +229,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"jbl",
         type: "headphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 22,
@@ -240,7 +240,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 23,
@@ -251,18 +251,18 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"jbl",
         type: "earbus",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 24,
-        title: "Bluetooth JBL Everest Elite 300",
+        title: "connectWith JBL Everest Elite 300",
         price: 76,
         discount: 0,
         imageUrl: "https://i.imgur.com/YBD710B.png",
         color: "blue",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 25,
@@ -273,18 +273,18 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"jbl",
         type: "earphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 26,
-        title: "JBL Reflect Mini earphones Bluetooth",
+        title: "JBL Reflect Mini earphones connectWith",
         price: 58,
         discount: 0,
         imageUrl: "https://i.imgur.com/kYHCDsY.png",
         color: "red",
         brand:"jbl",
         type: "earphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 27,
@@ -295,7 +295,7 @@ const STORE_PRODUCTS = [
         color: "white",
         brand:"",
         type: "headphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 28,
@@ -306,7 +306,7 @@ const STORE_PRODUCTS = [
         color: "pink",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 29,
@@ -317,7 +317,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"jbl",
         type: "headphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 30,
@@ -328,7 +328,7 @@ const STORE_PRODUCTS = [
         color: "pink",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 31,
@@ -339,7 +339,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 32,
@@ -350,7 +350,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 33,
@@ -361,7 +361,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"jbl",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 34,
@@ -372,7 +372,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"jbl",
         type: "earbuds",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 35,
@@ -383,7 +383,7 @@ const STORE_PRODUCTS = [
         color: "red",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 36,
@@ -394,18 +394,18 @@ const STORE_PRODUCTS = [
         color: "pink",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 37,
-        title: "Noise-cancelling Beats Bluetooth headphones",
+        title: "Noise-cancelling Beats connectWith headphones",
         price: 78,
         discount: 0,
         imageUrl: "https://i.imgur.com/aTLD3Rc.png",
         color: "blue",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 38,
@@ -416,7 +416,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 39,
@@ -427,7 +427,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 40,
@@ -438,7 +438,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 41,
@@ -449,7 +449,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 42,
@@ -460,7 +460,7 @@ const STORE_PRODUCTS = [
         color: "gold",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 43,
@@ -471,18 +471,18 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 44,
-        title: "Red Beats Bluetooth D26",
+        title: "Red Beats connectWith D26",
         price: 120,
         discount: 0,
         imageUrl: "https://i.imgur.com/wwEs6jl.png",
         color: "red",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 45,
@@ -493,7 +493,7 @@ const STORE_PRODUCTS = [
         color: "grey",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 46,
@@ -504,7 +504,7 @@ const STORE_PRODUCTS = [
         color: "white",
         brand:"beats",
         type: "earbuds",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 47,
@@ -515,7 +515,7 @@ const STORE_PRODUCTS = [
         color: "gold",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 48,
@@ -526,7 +526,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 49,
@@ -537,7 +537,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"beats",
         type: "headphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 50,
@@ -548,7 +548,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"beats",
         type: "headphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 51,
@@ -559,7 +559,7 @@ const STORE_PRODUCTS = [
         color: "white",
         brand:"beats",
         type: "headphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 52,
@@ -570,7 +570,7 @@ const STORE_PRODUCTS = [
         color: "gold",
         brand:"beats",
         type: "earphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 53,
@@ -581,7 +581,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"beats",
         type: "headphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 54,
@@ -592,7 +592,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"beats",
         type: "headphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 55,
@@ -603,7 +603,7 @@ const STORE_PRODUCTS = [
         color: "pink",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 56,
@@ -614,7 +614,7 @@ const STORE_PRODUCTS = [
         color: "grey",
         brand:"beats",
         type: "earphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 57,
@@ -625,7 +625,7 @@ const STORE_PRODUCTS = [
         color: "green",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 58,
@@ -636,7 +636,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 59,
@@ -647,7 +647,7 @@ const STORE_PRODUCTS = [
         color: "white",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 60,
@@ -658,7 +658,7 @@ const STORE_PRODUCTS = [
         color: "red",
         brand:"beats",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 61,
@@ -669,7 +669,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"sony",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 62,
@@ -680,7 +680,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"sony",
         type: "headphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 63,
@@ -691,18 +691,18 @@ const STORE_PRODUCTS = [
         color: "red",
         brand:"sony",
         type: "headphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 64,
-        title: "Sony MDR-V6 Headphones Bluetooth Audio Bass",
+        title: "Sony MDR-V6 Headphones connectWith Audio Bass",
         price: 80,
         discount: 0,
         imageUrl: "https://i.imgur.com/zJLGb7M.png",
         color: "blue",
         brand:"sony",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 65,
@@ -713,7 +713,7 @@ const STORE_PRODUCTS = [
         color: "gold",
         brand:"sony",
         type: "earbuds",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 66,
@@ -724,7 +724,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"sony",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 67,
@@ -735,7 +735,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"sony",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 68,
@@ -746,7 +746,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"sony",
         type: "earphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 69,
@@ -757,7 +757,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"sony",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 70,
@@ -768,7 +768,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"sony",
         type: "headphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 71,
@@ -779,7 +779,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"bose",
         type: "earbuds",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 72,
@@ -790,7 +790,7 @@ const STORE_PRODUCTS = [
         color: "white",
         brand:"bose",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 73,
@@ -801,7 +801,7 @@ const STORE_PRODUCTS = [
         color: "grey",
         brand:"bose",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 74,
@@ -812,7 +812,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"bose",
         type: "earphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 75,
@@ -823,7 +823,7 @@ const STORE_PRODUCTS = [
         color: "grey",
         brand:"bose",
         type: "headphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 76,
@@ -834,7 +834,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"bose",
         type: "earbuds",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 77,
@@ -845,7 +845,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"akg",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 78,
@@ -856,7 +856,7 @@ const STORE_PRODUCTS = [
         color: "blue",
         brand:"akg",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 79,
@@ -867,7 +867,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"akg",
         type: "headphones",
-        bluetooth: true
+        connectWith: 'bluetooth'
     },
     {
         id: 80,
@@ -878,7 +878,7 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"akg",
         type: "headphones",
-        bluetooth: false
+        connectWith: 'cable'
     },
     {
         id: 81,
@@ -889,6 +889,8 @@ const STORE_PRODUCTS = [
         color: "black",
         brand:"akg",
         type: "earphones",
-        bluetooth: false
+        connectWith: 'cable'
     }
 ]
+
+export default SHOP_ITEMS
