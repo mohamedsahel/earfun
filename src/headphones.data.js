@@ -1,5 +1,5 @@
 
-const PRODUCTS = [
+const STORE_PRODUCTS = [
     {
         id: 1,
         title: "JBL Everest Elite 700 Headphones",
