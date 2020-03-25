@@ -1,16 +1,15 @@
 import React from 'react'
 
-import Theme from './components/theme/theme.component'
-import HomePage from './pages/homepage/homepage.component'
+import { HomePage, Theme } from './components/components'
 
+import GlobalStyle from './global.styles'
 
 const App = () => {
 
   return (
     <Theme>
-      <div>
+        <GlobalStyle />
         <HomePage />
-      </div>
     </Theme>
   );
 }

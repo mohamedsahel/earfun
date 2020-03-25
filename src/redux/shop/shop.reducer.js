@@ -1,5 +1,5 @@
 import shopActionsTypes from './shop.types'
-import { getFilteredItems } from './shop.actions'
+import { getFilteredItems } from './shop.utils'
 
 import SHOP_ITEMS from "./shop.data"
 
@@ -16,6 +16,8 @@ const shopReducer = (state=INITIAL_STATE, action) => {
                 ...state,
                 shopItems: getFilteredItems(state.shopItems, payload)
             }
+        default :
+            return state
     }
 }
 
