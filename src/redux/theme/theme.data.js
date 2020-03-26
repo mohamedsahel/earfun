@@ -32,5 +32,14 @@ export const THEME = {
         blue: '#0099FF',
         ...lightMode
     },
-    font: 'montsehrrat, open sans'
+    font: 'montsehrrat, open sans',
+    radius: {
+        xs: '0.2rem',
+        sm: '0.5rem',
+        md: '1rem',
+        lg: '1.5rem',
+        xl: '2rem',
+        hg: '10rem',
+        fifty: '50%'
+    }
 }

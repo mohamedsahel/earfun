@@ -53,6 +53,11 @@ const GlobalStyle = createGlobalStyle`
 
     button, input, textarea, select {
       margin: 0;
+      outline: none;
+    }
+
+    button, a {
+      cursor: pointer;
     }
 
     img, video, svg {

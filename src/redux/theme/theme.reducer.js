@@ -8,10 +8,10 @@ const INITIAL_STATE = THEME
 
 const themeReducer = (state=INITIAL_STATE, action) => {
     if(action.type === 'CHANGE_MODE'){
-        let newMode = state.mode ? darkMode : lightMode
+        let newMode = state.isLightMode ? darkMode : lightMode
         return {
             ...state,
-            mode: !state.mode,
+            isLightMode: !state.isLightMode,
             colors: { ...state.colors, ...newMode }
             }
         }

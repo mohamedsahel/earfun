@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { HeroSliderSlide, Icon } from "../../components";
+import { HeroSliderSlide, Icon, Button, IconTextButton } from "../../components";
 
 import * as S from './homepage.styles'
 
@@ -20,7 +20,7 @@ const HomePage = () => {
     return (
         <S.Container>
             <HeroSliderSlide item={item} />
-            <Icon icon='Menu' />
+            <IconTextButton />
         </S.Container>
     )
 }

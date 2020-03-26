@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: ${p => p.size};
@@ -14,11 +14,11 @@ export const Container = styled.div`
         height: ${p => p.svgSize};
 
         * {
-            fill: ${p => p.theme.colors.black};
+            fill: ${p => p.fill || p.theme.colors.black};
         }
 
         line {
-            stroke: ${p => p.theme.colors.black};
+            stroke: ${p => p.fill || p.theme.colors.black};
         }
 
     }
