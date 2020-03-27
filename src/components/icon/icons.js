@@ -1,4 +1,3 @@
-import React from 'react'
 
 import { ReactComponent as EarfunLogo } from '../../assests/icons/earfun-logo-icon.svg'
 import { ReactComponent as AddToCart } from '../../assests/icons/add-to-cart-icon.svg'

@@ -1,27 +1,18 @@
 import React from 'react'
 
-import { HeroSliderSlide, Icon, Button, IconTextButton } from "../../components";
+import { HeroSliderContainer as HeroSlider, Theme } from "../../components";
 
 import * as S from './homepage.styles'
 
-const item = {
-    id: 16,
-    title: "JBL Microphone earphones",
-    price: 30,
-    discount: 0,
-    imageUrl: "https://i.imgur.com/ZtT6QDx.png",
-    color: "red",
-    brand:"jbl",
-    type: "earphones",
-    connectWith: 'bluetooth'
-}
+const theme = {colors: { light: '#F8F8F8' }}
 
 const HomePage = () => {
     return (
-        <S.Container>
-            <HeroSliderSlide item={item} />
-            <IconTextButton />
-        </S.Container>
+        <Theme>
+            <S.Container>
+                <HeroSlider />
+            </S.Container>
+        </Theme>
     )
 }
 

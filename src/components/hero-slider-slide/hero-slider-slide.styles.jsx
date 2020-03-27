@@ -1,27 +1,68 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 100px 100px;
-    grid-template-rows: 1fr 3fr;
-    grid-template-areas: 
-        'title img'
-        'price img';
-    
-`
 
 export const Title = styled.h1`
-    grid-area: title;
-    border: 1px blue solid;
+    font-size: 2.6rem;
+    font-weight: 900;
+    margin-top: 6vh;
 `
 
 export const Price = styled.span`
-    grid-area: price;
-    border: 1px green solid;
+    font-size: 2rem;
 `
 
-export const Image = styled.div`
-    grid-area: img;
-    border: 1px red solid;
+export const Image = styled.img`
+    margin: auto;
+    height: 60%;
 `
+
+
+export const Container = styled.div`
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    visibility: ${p => p.showen ? 'visible' : 'hidden'};
+
+    > * {
+        display: block;
+        margin-top: 3vh;
+    }
+
+    ${Title} {
+        margin-top: 4vh;
+    }
+
+    @media (min-width: 800px) {
+        text-align: left;
+
+        > * {
+            margin-top: 4rem;
+        }
+
+        ${Image} {
+            float: right;
+            max-height: 80%;
+            height: 100%;
+        }
+
+        ${Title} {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-top: 6rem;
+        }
+
+        ${Price} {
+            font-size: 2.8rem;
+            font-weight: 500;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        ${Title} {
+            font-size: 5rem;
+        }
+    }
+`
+

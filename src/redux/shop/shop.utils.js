@@ -1,6 +1,6 @@
 
 export const getFilteredItems = (items, filters) => {
-    const { types, connectWith, priceRange , colors, blue, black,brands, onSale } = filters
+    const { types, connectWith, priceRange , colors, brands, onSale } = filters
     
     return items.filter(item => ( 
             priceRange[0] <= item.price <= priceRange[1] &&
