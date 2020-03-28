@@ -29,7 +29,7 @@ const ShareIcons = ({ url, text, mediaSrc }) => {
                  target='_blank' 
                  rel="noopener noreferrer"
                  >
-                    <S.StyledIcon icon={icon} size='3.6rem' svgSize='50%' />
+                    <Icon icon={icon} size='3.6rem' svgSize='50%' />
                 </a>
             ))
         }

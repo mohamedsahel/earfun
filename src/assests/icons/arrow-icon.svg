@@ -1,5 +1,5 @@
 <svg id="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="40.56" height="14.244" viewBox="0 0 40.56 14.244">
   <g id="Group_11" data-name="Group 11" transform="translate(0 0)">
-    <path id="Path_6" data-name="Path 6" d="M39.972,98.146,27.4,85.578a.838.838,0,1,0-1.185,1.185L37.357,97.9H.838a.838.838,0,1,0,0,1.676H37.357c-.009,0,2.43-.011,2.428,0C41.207,99.58,40.3,98.473,39.972,98.146Z" transform="translate(0 -85.333)"/>
+    <path id="Path_6" data-name="Path 6" d="M39.972,98.146,27.4,85.578a.838.838,0,1,0-1.185,1.185L37.357,97.9H.838a.838.838,0,1,0,0,1.676H37.357c-.009,0,2.43-.011,2.428,0C41.207,99.58,40.3,98.473,39.972,98.146Z" transform="translate(0 -85.333)" stroke-width='3px' />
   </g>
 </svg>

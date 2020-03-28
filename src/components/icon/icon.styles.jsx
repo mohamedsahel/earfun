@@ -7,6 +7,15 @@ export const Container = styled.div`
     width: ${p => p.size};
     height: ${p => p.size};
     border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        background: ${p => p.theme.colors.transparent_10}
+    }
+
+    &:active {
+        background: ${p => p.theme.colors.transparent_20}
+    }
 
     svg {
         display: inline-block;
@@ -19,6 +28,10 @@ export const Container = styled.div`
 
         line {
             stroke: ${p => p.fill || p.theme.colors.black};
+        }
+
+        &#arrow-icon {
+            stroke: ${p => p.fill || p.theme.colors.black}
         }
 
     }
