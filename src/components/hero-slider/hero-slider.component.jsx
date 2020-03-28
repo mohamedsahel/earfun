@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
-import { HeroSliderSlide, Icon } from "..";
+import { HeroSliderSlide, Icon, ShareIcons } from "..";
 
 import * as S from './hero-slider.styles'
 
@@ -21,12 +21,12 @@ const HeroSlider = ({ items }) => {
 
     useEffect(() => {
         setTimeout(() => changeCurrentSlide(1),
-        2000)
+        5000)
     })
 
-
+    const windowHeight = window.innerHeight;
     return (
-        <S.Container>
+        <S.Container windowHeight={windowHeight} >
             <S.SlidesWrapper>
                 {
                 items.map((item, index) => <HeroSliderSlide 
@@ -37,7 +37,12 @@ const HeroSlider = ({ items }) => {
                     />)
                 }
             </S.SlidesWrapper>
-            <Icon icon='arrow' />
+            <S.Footer>
+                <ShareIcons 
+                url='{}' 
+                text='{}' 
+                mediaSrc='{}' />
+            </S.Footer>
         </S.Container>
     )
 }

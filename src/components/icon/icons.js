@@ -10,7 +10,7 @@ import { ReactComponent as Earphones } from '../../assests/icons/earphones-icon.
 import { ReactComponent as Facebook } from '../../assests/icons/facebook-icon.svg'
 import { ReactComponent as Headphones } from '../../assests/icons/headphones-icon.svg'
 import { ReactComponent as Heart } from '../../assests/icons/heart-icon.svg'
-import { ReactComponent as Instagram } from '../../assests/icons/instagram-icon.svg'
+import { ReactComponent as Pinterest } from '../../assests/icons/pinterest-icon.svg'
 import { ReactComponent as Login } from '../../assests/icons/login-icon.svg'
 import { ReactComponent as Menu } from '../../assests/icons/menu-icon.svg'
 import { ReactComponent as Plus } from '../../assests/icons/plus-icon.svg'
@@ -31,7 +31,7 @@ export default {
     Facebook,
     Headphones,
     Heart,
-    Instagram,
+    Pinterest,
     Login,
     Menu,
     Plus,

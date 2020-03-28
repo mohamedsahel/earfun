@@ -13,7 +13,7 @@ export const Price = styled.span`
 
 export const Image = styled.img`
     margin: auto;
-    height: 60%;
+    height: 59%;
 `
 
 
