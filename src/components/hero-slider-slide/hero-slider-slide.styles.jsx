@@ -2,13 +2,14 @@ import styled from 'styled-components'
 
 
 export const Title = styled.h1`
-    font-size: 2.6rem;
-    font-weight: 900;
+    font-size: 2.2rem;
+    font-weight: 700;
     margin-top: 6vh;
 `
 
 export const Price = styled.span`
     font-size: 2rem;
+    font-weight: 500;
 `
 
 export const Image = styled.img`
@@ -49,19 +50,21 @@ export const Container = styled.div`
 
         ${Title} {
             font-size: 4rem;
-            font-weight: 900;
+            font-weight: 800;
             margin-top: 6rem;
         }
 
         ${Price} {
             font-size: 2.8rem;
             font-weight: 500;
+            margin-bottom: 3rem;
         }
+
     }
 
     @media (min-width: 1024px) {
         ${Title} {
-            font-size: 5rem;
+            font-size: 4.5rem;
         }
     }
 `

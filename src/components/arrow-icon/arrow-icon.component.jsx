@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import * as S from './arrow-icon.styles'
 
-const ArrowIcon = ({ sens='right', onClick, noBody=false, size='3.6rem', svgSize='50%' }) => {
+const ArrowIcon = ({ sens='right', onClick, noBody=false, size='5rem', svgSize='70%' }) => {
     return (
         <S.Arrow icon={noBody ? 'BackArrow' : 'Arrow'} sens={sens} onClick={onClick} size={size} svgSize={svgSize} />
     )

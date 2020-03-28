@@ -52,7 +52,7 @@ export const THEME = {
         blue: '#0099FF',
         ...lightMode
     },
-    font: 'montsehrrat, open sans',
+    font: 'montserrat, open sans',
     radius: {
         xs: '0.2rem',
         sm: '0.5rem',

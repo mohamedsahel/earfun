@@ -26,7 +26,7 @@ export const Footer = styled.div`
     display: flex;
     justify-content: space-between;
     height: 7%;
-    margin-top: 3%;
+    margin-top: 2%;
     padding-right: 1.6rem;
     padding-left: 1.6rem;
 

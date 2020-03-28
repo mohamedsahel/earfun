@@ -15,8 +15,9 @@ export const Button = styled.button`
 
     span {
         display: inline-block;
-        margin-left: 1.2rem;
+        margin-left: 1.6rem;
     }
+
 
     svg path {
         ${p => p.inverted ? {
