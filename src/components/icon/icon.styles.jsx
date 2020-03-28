@@ -9,13 +9,16 @@ export const Container = styled.div`
     border-radius: 50%;
     cursor: pointer;
 
-    &:hover {
-        background: ${p => p.theme.colors.transparent_10}
+    @media (pointer: fine) and (hover: hover) {
+        &:hover {
+            background: ${p => p.theme.colors.transparent_10}
+        }
+
+        &:active {
+            background: ${p => p.theme.colors.transparent_20};
+        }
     }
 
-    &:active {
-        background: ${p => p.theme.colors.transparent_20}
-    }
 
     svg {
         display: inline-block;

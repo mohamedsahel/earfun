@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from 'styled-components'
 
 import { HeroSliderContainer as HeroSlider, Theme } from "../../components";
 
 import * as S from './homepage.styles'
 
-const theme = {colors: { light: '#F8F8F8' }}
 
 const HomePage = () => {
+    const theme = useContext(ThemeContext); 
+    const changedTheme = {
+        colors: { 
+            ...theme.colors, 
+            light: theme.isLightMode ? theme.colors.gray_1 : theme.colors.light
+        }
+    }
+    console.log('rerendred')
+
     return (
-        <Theme>
+        <Theme  theme={changedTheme} >
             <S.Container>
                 <HeroSlider />
             </S.Container>

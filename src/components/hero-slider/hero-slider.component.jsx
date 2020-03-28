@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import PropTypes from 'prop-types'
 
 import { HeroSliderSlide, ShareIcons, ArrowIcon } from "..";
@@ -8,7 +8,7 @@ import * as S from './hero-slider.styles'
 const HeroSlider = ({ items }) => {
     const [currentSlide, setCurrentSlide] = useState(1)
 
-    const changeCurrentSlide = value => {
+    const changeCurrentSlide = useCallback(value => {
         let nextSlide
         if(value > 0) {
             nextSlide = currentSlide === items.length ? 1 : currentSlide + 1
@@ -17,14 +17,16 @@ const HeroSlider = ({ items }) => {
         }
 
         setCurrentSlide(nextSlide)
-    } 
+    }, [currentSlide, items.length])
 
     useEffect(() => {
-        // setTimeout(() => changeCurrentSlide(1),
-        // 5000)
-    })
+        const slideInterval = setInterval(() => changeCurrentSlide(1),
+        6000)
 
-    console.log(currentSlide)
+        return () => clearInterval(slideInterval)
+    }, [currentSlide, changeCurrentSlide])
+
+
     const windowHeight = window.innerHeight;
     const url ='https://earfun.com' ,
           text = items[currentSlide - 1].title,

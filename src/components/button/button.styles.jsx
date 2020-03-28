@@ -25,20 +25,22 @@ export const Button = styled.button`
     } 
     }
 
-    &:hover {
-        ${p => p.inverted ? {
-            color: p.theme.colors.white,
-            background: p.theme.colors.black
-        } : 
-        {
-            background: p.theme.colors.dark
+    @media (pointer: fine) {
+        &:hover {
+            ${p => p.inverted ? {
+                color: p.theme.colors.white,
+                background: p.theme.colors.black
+            } : 
+            {
+                background: p.theme.colors.dark
+            }
         }
-    }
 
-        svg path {
-            ${p => p.inverted && {
-            fill: p.theme.colors.white,
-        }} 
+            svg path {
+                ${p => p.inverted && {
+                fill: p.theme.colors.white,
+            }} 
+            }
         }
     }
 
