@@ -1,5 +1,6 @@
 export const darkMode = {
     light: '#09142A',
+    light2: '#09142A',
     dark: '#fff',
     white: '#000',
     black: '#fff',
@@ -23,6 +24,7 @@ export const darkMode = {
 
 export const lightMode = {
     light: '#fff',
+    light2: '#F8F8F8',
     dark: '#09142A',
     white: '#fff',
     black: '#000',

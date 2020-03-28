@@ -11,6 +11,7 @@ import HeroSlider from './hero-slider/hero-slider.component'
 import HeroSliderContainer from './hero-slider/hero-slider.container'
 import ShareIcons from './share-icons/share-icons.component'
 import ArrowIcon from './arrow-icon/arrow-icon.component'
+import Header from './header/header.component'
 
 
 
@@ -26,5 +27,6 @@ export {
     HeroSlider,
     HeroSliderContainer,
     ShareIcons,
-    ArrowIcon
+    ArrowIcon,
+    Header
 }
