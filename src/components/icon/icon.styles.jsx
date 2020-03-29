@@ -11,11 +11,11 @@ export const Container = styled.div`
 
     @media (pointer: fine) and (hover: hover) {
         &:hover {
-            background: ${p => p.theme.colors.transparent_10}
+            background: ${p => p.theme.colors.transparent_05}
         }
 
         &:active {
-            background: ${p => p.theme.colors.transparent_20};
+            background: ${p => p.theme.colors.transparent_10};
         }
     }
 
