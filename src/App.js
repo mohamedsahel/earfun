@@ -1,7 +1,11 @@
 import React from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { 
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom'
 
-import { HomePage, Theme, Header } from './components'
+import { Theme, HomePage, ShopPage, Header } from './components'
 
 import GlobalStyle from './global.styles'
 
@@ -11,7 +15,14 @@ const App = () => {
       <Theme>
           <GlobalStyle />
           <Header />
-          <HomePage />
+        <Switch>
+          <Route exact path='/' >
+            <HomePage />
+          </Route>
+          <Route path='/shop' >
+            <ShopPage />
+          </Route>
+        </Switch>
       </Theme>
     </Router>
   );

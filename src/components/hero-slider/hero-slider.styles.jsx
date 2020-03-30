@@ -4,15 +4,14 @@ import { Icon } from '..'
 
 
 export const Container = styled.div`
-    height: ${p => p.windowHeight + 'px'};
+    height: ${p => p.windowHeight - 50 + 'px'};
     max-height: 100vh;
     padding-bottom: 1rem;
-    padding-top: 4rem;
 
     @media (min-width: 800px) {
         padding: 4rem;
         padding-bottom: 3rem;
-        padding-top: 10rem;
+        padding-top: 5rem;
     }
 `
 

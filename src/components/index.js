@@ -1,5 +1,6 @@
 // Pages
 import HomePage from '../pages/homepage/homepage.component'
+import ShopPage from '../pages/shoppage/shoppage.component'
 
 
 // Components
@@ -14,12 +15,16 @@ import ArrowIcon from './arrow-icon/arrow-icon.component'
 import Header from './header/header.component'
 import MenuDropdown from './menu-dropdown/menu-dropdown.component'
 import MenuIcon from './menu-icon/menu-icon.component'
+import ProductsGrid from './products-grid/products-grid.component'
+import ProductsGridContainer from './products-grid/products-grid.container'
+import ProductCard from './product-card/product-card.component'
 
 
 
 export { 
     //pages
     HomePage,
+    ShopPage,
     
     //components
     Theme,
@@ -32,5 +37,8 @@ export {
     ArrowIcon,
     Header,
     MenuDropdown,
-    MenuIcon
+    MenuIcon,
+    ProductsGrid,
+    ProductsGridContainer,
+    ProductCard
 }
