@@ -19,19 +19,16 @@ export const HeaderIcon = styled(Icon)`
     border-radius: ${p => p.theme.radius.sm};
 `
 
-export const Container = styled.div`
+export const ItemsWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    height: 5rem;
+    height: 100%;
     width: 100%;
+    max-width: 120rem;
+    margin: auto;
     padding-right: 1.6rem;
     padding-left: 1.6rem;
-    background: ${p => p.theme.colors.light2};
-    box-shadow: 0 0 0.8rem ${p => p.theme.colors.transparent_05},
-                0 0 1.6rem ${p => p.theme.colors.transparent_05};
 
 
     svg path {
@@ -41,5 +38,15 @@ export const Container = styled.div`
     @media (min-width: 800px) {
         justify-content: none;
     }
+
+`
+
+export const Container = styled.div`
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    width: 100%;
+    background: ${p => p.theme.colors.light2};
+    box-shadow: ${p => p.theme.shadow.sm};
 
 `

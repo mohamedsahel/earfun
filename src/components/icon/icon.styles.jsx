@@ -29,7 +29,7 @@ export const Container = styled.div`
             fill: ${p => p.fill || p.theme.colors.black};
         }
 
-        line {
+        line, #menu-icon {
             stroke: ${p => p.fill || p.theme.colors.black};
         }
 

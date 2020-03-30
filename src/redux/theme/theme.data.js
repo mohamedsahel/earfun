@@ -46,6 +46,17 @@ export const lightMode = {
     transparent_90: 'rgba(0, 0, 0, 0.90)',
 }
 
+
+export const shadowLight = {
+    sm: `0 0 0.8rem rgba(0, 0, 0, 0.05),
+         0 0 1.6rem rgba(0, 0, 0, 0.05)`
+}
+
+export const shadowDark = {
+    sm: `0 0 0.8rem rgba(255, 255, 255, 0.05),
+         0 0 1.6rem rgba(255, 255, 255, 0.05)`
+}
+
 export const THEME = {
     isLightMode: true,
     colors: {
@@ -63,5 +74,7 @@ export const THEME = {
         xl: '2rem',
         hg: '10rem',
         fifty: '50%'
-    }
+    },
+    shadow: { ...shadowLight }
+
 }

@@ -18,10 +18,9 @@ export const Container = styled.div`
 
 export const SlidesWrapper = styled.div`
     position: relative;
-    height: 89%;
+    height: 90%;
     max-width: 112rem;
     margin: auto;
-    cursor: pointer;
 `
 
 export const StyledIcon = styled(Icon)
@@ -29,12 +28,14 @@ export const StyledIcon = styled(Icon)
 export const Footer = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     height: 7%;
-    margin-top: 4%;
+    margin-top: 3%;
     padding-right: 1.6rem;
     padding-left: 1.6rem;
 
     @media (min-width: 800px) {
         padding: 0;
+        margin-top: 2.5%;
     }
 `
