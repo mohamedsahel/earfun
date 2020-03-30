@@ -7,9 +7,9 @@ export const Container = styled.div`
     width: ${p => p.size};
     height: ${p => p.size};
     border-radius: 50%;
-    cursor: pointer;
-
+    
     @media (pointer: fine) and (hover: hover) {
+        cursor: pointer;
         &:hover {
             background: ${p => p.theme.colors.transparent_05}
         }

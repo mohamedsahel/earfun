@@ -49,12 +49,18 @@ export const lightMode = {
 
 export const shadowLight = {
     sm: `0 0 0.8rem rgba(0, 0, 0, 0.05),
-         0 0 1.6rem rgba(0, 0, 0, 0.05)`
+         0 0 1.6rem rgba(0, 0, 0, 0.05)`,
+    md: `0 0 0.8rem rgba(0, 0, 0, 0.05),
+         0 0 1.8rem rgba(0, 0, 0, 0.05),
+         0 0 3rem rgba(0, 0, 0, 0.05)`
 }
 
 export const shadowDark = {
     sm: `0 0 0.8rem rgba(255, 255, 255, 0.05),
-         0 0 1.6rem rgba(255, 255, 255, 0.05)`
+         0 0 1.6rem rgba(255, 255, 255, 0.05)`,
+    md: `0 0 0.8rem rgba(255, 255, 255, 0.05),
+        0 0 1.8rem rgba(255, 255, 255, 0.05),
+        0 0 3rem rgba(255, 255, 255, 0.05)`
 }
 
 export const THEME = {
