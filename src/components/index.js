@@ -18,6 +18,7 @@ import MenuIcon from './menu-icon/menu-icon.component'
 import ProductsGrid from './products-grid/products-grid.component'
 import ProductsGridContainer from './products-grid/products-grid.container'
 import ProductCard from './product-card/product-card.component'
+import DiscountLabel from './discount-label/discount-label.component'
 
 
 
@@ -40,5 +41,6 @@ export {
     MenuIcon,
     ProductsGrid,
     ProductsGridContainer,
-    ProductCard
+    ProductCard,
+    DiscountLabel
 }
