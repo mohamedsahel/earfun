@@ -4,7 +4,6 @@ import { Icon } from '..'
 import DiscountLabel from '../discount-label/discount-label.component'
 
 
-
 export const Container = styled.div`
     height: 38rem;
     width: 28rem;
@@ -20,8 +19,10 @@ export const Container = styled.div`
 
 export const Image = styled.img`
     height: 28rem;
-    width: auto;
     margin-top: -6rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 `
 
 export const DiscountLabelIcon = styled(DiscountLabel)`
@@ -40,6 +41,8 @@ export const PlusIcon = styled(Icon)`
 
     svg path {
         fill: black;
+        stroke: black;
+        stroke-width: 2rem;
     }
 
     :hover {

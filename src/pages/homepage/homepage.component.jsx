@@ -1,6 +1,6 @@
-import React, { useContext } from 'react'
+import React from 'react'
 
-import { HeroSliderContainer as HeroSlider, Theme } from "../../components";
+import { HeroSlider, Theme } from "../../components";
 
 import * as S from './homepage.styles'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ProductsGridContainer as ProductsGrid } from '../../components'
+import { ProductsGrid } from '../../components'
 
 import * as S from './shoppage.styles'
 

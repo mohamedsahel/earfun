@@ -5,7 +5,7 @@ import {
   Route
 } from 'react-router-dom'
 
-import { Theme, HomePage, ShopPage, Header } from './components'
+import { Theme, HomePage, ShopPage, CartPage, Header } from './components'
 
 import GlobalStyle from './global.styles'
 
@@ -21,6 +21,9 @@ const App = () => {
           </Route>
           <Route path='/shop' >
             <ShopPage />
+          </Route>
+          <Route exact path='/cart' >
+            <CartPage />
           </Route>
         </Switch>
       </Theme>

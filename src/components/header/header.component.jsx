@@ -14,7 +14,7 @@ const Header = () => {
                 <S.HeaderIconLink to='/shop' >
                     <S.HeaderIcon icon='shop' size='3.8rem' svgSize='45%' />
                 </S.HeaderIconLink>
-                <S.HeaderIconLink to='cart' >
+                <S.HeaderIconLink to='/cart' >
                     <S.HeaderIcon icon='bag'  size='3.8rem' svgSize='45%' />
                 </S.HeaderIconLink>
                 <MenuDropdown />
