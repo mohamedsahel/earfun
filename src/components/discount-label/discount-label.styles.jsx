@@ -11,7 +11,5 @@ export const Discount = styled.span`
 `
 
 export const Container = styled.div`
-    border: 1px green dashed;
-    position: absolute;
     width: 8rem;
 `

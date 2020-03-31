@@ -5,13 +5,17 @@ import { ReactComponent as DiscountLabelIcon } from '../../assests/icons/discoun
 
 import * as S from './discount-label.styles'
 
-const DiscountLabel = percentage => {
+const DiscountLabel = ({ discount, className }) => {
     return (
-        <S.Container>
-            <S.Discount>30 %</S.Discount>
+        <S.Container className={className} >
+            <S.Discount>{discount} %</S.Discount>
             <DiscountLabelIcon />
         </S.Container>
     )
+}
+
+DiscountLabel.propTypes= {
+    discount: PropTypes.number.isRequired
 }
 
 export default DiscountLabel

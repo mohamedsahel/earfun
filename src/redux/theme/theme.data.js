@@ -63,6 +63,28 @@ export const shadowDark = {
         0 0 3rem rgba(255, 255, 255, 0.05)`
 }
 
+export const productBackgroundDark = {
+    black: 'rgba(255, 255, 255, 0.05)',
+    white: 'rgba(255, 255, 255, 0.05)',
+    gray: 'rgba(255, 255, 255, 0.05)',
+    blue: 'rgba(255, 255, 255, 0.05)',
+    red: 'rgba(255, 255, 255, 0.05)',
+    pink: 'rgba(255, 255, 255, 0.05)',
+    green: 'rgba(255, 255, 255, 0.05)',
+    gold: 'rgba(255, 255, 255, 0.05)'
+}
+
+export const productBackgroundLight = {
+    black: 'rgba(128, 128, 128, 0.1)',
+    white: 'rgba(128, 128, 128, 0.1)',
+    gray: 'rgba(128, 128, 128, 0.1)',
+    blue: 'rgba(0, 128, 255, 0.1)',
+    red: 'rgba(255, 0, 0, 0.1)',
+    pink: 'rgba(255, 0, 200, 0.08)',
+    green: 'rgba(0, 255, 0, 0.1)',
+    gold: 'rgba(236, 216, 153, 0.1)'
+}
+
 export const THEME = {
     isLightMode: true,
     colors: {
@@ -71,6 +93,7 @@ export const THEME = {
         blue: '#0099FF',
         ...lightMode
     },
+    productBackground: {...productBackgroundLight},
     font: 'montserrat, open sans',
     radius: {
         xs: '0.2rem',

@@ -21,7 +21,6 @@ import ProductCard from './product-card/product-card.component'
 import DiscountLabel from './discount-label/discount-label.component'
 
 
-
 export { 
     //pages
     HomePage,
@@ -42,5 +41,5 @@ export {
     ProductsGrid,
     ProductsGridContainer,
     ProductCard,
-    DiscountLabel
+    DiscountLabel,
 }
