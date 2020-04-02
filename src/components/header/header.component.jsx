@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Icon, MenuDropdown } from "..";
+import { MenuDropdown } from "..";
 
 import * as S from './header.styles'
 

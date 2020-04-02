@@ -2,17 +2,13 @@ import React from 'react'
 
 import * as S from './cart-items-wrapper.styles'
 
-
-import { DiscountLabel } from "..";
-
-console.log(DiscountLabel)
+import { CartItem } from '..'
 
 const CartItemsWrapper = ({ items, className }) => {
-    console.log('hi')
     return (
         <S.Wrapper className={className}>
             {
-                items.map(item => <div>{item.title}</div>)
+                items.map(item => <CartItem key={item.id} item={item} />)
             }
         </S.Wrapper>
     )

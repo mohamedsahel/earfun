@@ -1,45 +1,32 @@
-// Pages
-import HomePage from '../pages/homepage/homepage.component'
-import ShopPage from '../pages/shoppage/shoppage.component'
-import CartPage from '../pages/cartpage/cartpage.component'
-
 
 // Components
-import HeroSliderSlide from './hero-slider-slide/hero-slider-slide.component'
-import Theme from './theme/theme.component'
-import Icon from './icon/icon.component'
-import Button from './button/button.component'
-import HeroSlider from './hero-slider/hero-slider.container'
-import ShareIcons from './share-icons/share-icons.component'
-import ArrowIcon from './arrow-icon/arrow-icon.component'
-import Header from './header/header.component'
-import MenuDropdown from './menu-dropdown/menu-dropdown.component'
-import MenuIcon from './menu-icon/menu-icon.component'
-import ProductsGrid from './products-grid/products-grid.container'
-import ProductCard from './product-card/product-card.component'
-import DiscountLabel from './discount-label/discount-label.component'
-import CartItemsWrapper from './cart-items-wrapper/cart-items-wrapper.container'
+export { default as AspectRatioBox } from './aspect-ratio-box'
+export { default as Icon } from './icon/icon.component'
+export { default as ArrowIcon } from './arrow-icon/arrow-icon.component'
+export { default as ShareIcons } from './share-icons/share-icons.component'
+export { default as MenuIcon } from './menu-icon/menu-icon.component'
+export { default as MenuDropdown } from './menu-dropdown/menu-dropdown.component'
+export { default as Button } from './button/button.component'
+export { default as Header } from './header/header.component'
+export { default as HeroSliderSlide } from './hero-slider-slide/hero-slider-slide.component'
+export { default as HeroSlider } from './hero-slider/hero-slider.container'
+export { default as DiscountLabel } from './discount-label/discount-label.component'
+export { default as ProductCard } from './product-card/product-card.component'
+export { default as ProductsGrid } from './products-grid/products-grid.container'
+export { default as ItemCount } from './item-count/item-count.component'
+export { default as CartItem } from './cart-item/cart-item.component'
+export { default as CartItemsWrapper } from './cart-items-wrapper/cart-items-wrapper.container'
 
 
-export { 
-    //pages
-    HomePage,
-    ShopPage,
-    CartPage,
-    
-    //components
-    Theme,
-    HeroSliderSlide,
-    Icon,
-    Button,
-    HeroSlider,
-    ShareIcons,
-    ArrowIcon,
-    Header,
-    MenuDropdown,
-    MenuIcon,
-    ProductsGrid,
-    ProductCard,
-    DiscountLabel,
-    CartItemsWrapper
-}
+
+
+// theme
+export { default as Theme } from './theme/theme.component'
+
+
+
+
+// Pages
+export { default as ShopPage } from '../pages/shoppage/shoppage.component'
+export { default as CartPage } from '../pages/cartpage/cartpage.component'
+export { default as HomePage } from '../pages/homepage/homepage.component'

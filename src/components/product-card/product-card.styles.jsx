@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
-import { Icon } from '..'
-import DiscountLabel from '../discount-label/discount-label.component'
+import { Icon, DiscountLabel } from '..'
 
 
 export const Container = styled.div`

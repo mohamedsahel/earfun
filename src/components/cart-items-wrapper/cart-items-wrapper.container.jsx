@@ -5,8 +5,6 @@ import CartItemsWrapper from './cart-items-wrapper.component'
 
 const CartItemsWrapperContainer = () => {
     const cartItems = useSelector(state => state.cart.items)
-    
-    console.log(cartItems)
 
     return <CartItemsWrapper items={cartItems} />
 }

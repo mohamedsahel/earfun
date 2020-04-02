@@ -2,7 +2,6 @@ import React from 'react'
 
 import { ProductsGrid } from '../../components'
 
-import * as S from './shoppage.styles'
 
 const ShopPage = () => {
     return (

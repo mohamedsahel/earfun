@@ -6,7 +6,6 @@ import { addItem } from '../../redux/cart/cart.actions'
 
 import * as S from './product-card.styles'
 
-
 const ProductCard = ({ item }) => {
     const dispatch = useDispatch()
 

@@ -18,4 +18,4 @@ export const changeCartItemCount = (cartItems, itemId, amount) => {
     return newCartItems
 }
 
-export const clearItemFromCart = (cartItems, itemToClearId) =>  cartItems.filter(item => item.id !== itemToClearId)
+export const clearItemFromCart = (cartItems, itemToClearId) => cartItems.filter(item => item.id !== itemToClearId)
