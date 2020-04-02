@@ -33,7 +33,7 @@ export const Button = styled.button`
                 background: p.theme.colors.black
             } : 
             {
-                background: p.theme.colors.dark
+                background: p.theme.colors.gray_6
             }
         }
 

@@ -4,8 +4,6 @@ export { default as AspectRatioBox } from './aspect-ratio-box'
 export { default as Icon } from './icon/icon.component'
 export { default as ArrowIcon } from './arrow-icon/arrow-icon.component'
 export { default as ShareIcons } from './share-icons/share-icons.component'
-export { default as MenuIcon } from './menu-icon/menu-icon.component'
-export { default as MenuDropdown } from './menu-dropdown/menu-dropdown.component'
 export { default as Button } from './button/button.component'
 export { default as Header } from './header/header.component'
 export { default as HeroSliderSlide } from './hero-slider-slide/hero-slider-slide.component'
@@ -16,7 +14,7 @@ export { default as ProductsGrid } from './products-grid/products-grid.container
 export { default as ItemCount } from './item-count/item-count.component'
 export { default as CartItem } from './cart-item/cart-item.component'
 export { default as CartItemsWrapper } from './cart-items-wrapper/cart-items-wrapper.container'
-export { default as OrderCard } from './order-card/order-card.component'
+export { default as OrderCard } from './order-card/order-card.container'
 
 
 

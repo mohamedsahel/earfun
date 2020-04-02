@@ -16,6 +16,10 @@ export const Container = styled.div`
         &:first-child {
             margin-top: 0.6rem;
         }
+
+        &:nth-child(3) {
+            margin-bottom: 4rem;
+        }
     }
 
 `
@@ -30,10 +34,6 @@ export const RowTotal = styled.h4`
     color: ${p => p.theme.colors.black};
 `
 
-export const ValideCoupon = styled.div`
-    margin-top: 4rem;
-`
-
 export const Code = styled.span`
     font-size: 1.4rem;
     font-weight: 700;
@@ -46,7 +46,13 @@ export const Discount = styled.span`
     color: ${p => p.theme.colors.red};
 `
 
-export const Coupon = styled.div`
+export const UnvalideCoupon = styled.div`
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: ${p => p.theme.colors.red};
+`
+
+export const CouponForm = styled.form`
     border: 1px ${p => p.theme.colors.black} solid;
     border-radius: ${p => p.theme.radius.sm};
     margin-top: 1rem;
@@ -60,6 +66,7 @@ export const Input = styled.input`
     border: none;
     padding-left: 1.2rem;
     background: transparent;
+    color: ${p => p.theme.colors.black};
     ::placeholder {
         color: gray;
     }

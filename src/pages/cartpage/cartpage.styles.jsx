@@ -21,9 +21,10 @@ export const _OrderCard = styled(OrderCard)`
 
     @media (min-width: 1100px) {
         width: 40rem;
-        border: 1px solid black;
         position: fixed;
         right: 5%;
         top: 5rem;
+        border-radius: ${p => p.theme.radius.md};
+        box-shadow: ${p => p.theme.shadow.md}
     }
 `

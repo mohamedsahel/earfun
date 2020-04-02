@@ -35,6 +35,6 @@ export const Footer = styled.div`
 
     @media (min-width: 800px) {
         padding: 0;
-        margin-top: 2.5%;
+        margin-top: 1.5%;
     }
 `
