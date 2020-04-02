@@ -16,7 +16,7 @@ const HeroSliderSlide = ({ item:{title, price, imageUrl}, showen }) => {
             <Button style={{
                 padding: '1.2rem 2.4rem',
                 borderRadius: '10rem',
-                fontWeight: '500'
+                fontWeight: '500',
             }} 
             onClick={() => dispatch({type: 'CHANGE_MODE'})}
             inverted>

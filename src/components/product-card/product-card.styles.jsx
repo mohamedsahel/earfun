@@ -3,6 +3,16 @@ import styled from 'styled-components'
 import { Icon, DiscountLabel } from '..'
 
 
+export const Image = styled.img`
+    height: 28rem;
+    margin-top: -6rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+    `
+
+
 export const Container = styled.div`
     height: 38rem;
     width: 28rem;
@@ -11,18 +21,13 @@ export const Container = styled.div`
     background: ${p => p.theme.productBackground[p.color]};
     position: relative;
     
-    :hover {
-        box-shadow: ${p => p.theme.shadow.sm};
+    &:hover {
+        ${Image} {
+            transform: translate(-50%, -1rem);
+        }
     }
 `
 
-export const Image = styled.img`
-    height: 28rem;
-    margin-top: -6rem;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-`
 
 export const DiscountLabelIcon = styled(DiscountLabel)`
     position: absolute;

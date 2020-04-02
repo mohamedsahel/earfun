@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
         margin-top: 5rem;
 
         &:first-child {
-            margin-top: 3rem;
+            margin-top: 0rem;
         }
         
         &:not(:last-child) {

@@ -26,6 +26,16 @@ export const Container = styled.div`
     top: 0;
     visibility: ${p => p.showen ? 'visible' : 'hidden'};
 
+    button {
+        margin-right: auto;
+        margin-left: auto;
+        
+        @media (min-width: 800px) {
+            margin-left: 0;
+
+        }
+    }
+
     > * {
         display: block;
         margin-top: 3vh;

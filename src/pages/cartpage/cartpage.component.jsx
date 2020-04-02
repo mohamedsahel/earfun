@@ -7,6 +7,7 @@ const CartPage = () => {
     return (
         <S.Container>
             <S._CartItemsWrapper />
+            <S._OrderCard />
         </S.Container>
     )
 }

@@ -51,7 +51,7 @@ export const Container = styled.div`
     top: 0;
     height: 5rem;
     width: 100%;
-    background: ${p => p.theme.colors.light2};
+    background: ${p => p.theme.colors.light};
     box-shadow: ${p => p.theme.shadow.sm};
     z-index: 10;
 `
