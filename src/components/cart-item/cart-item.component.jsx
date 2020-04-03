@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 
+import { getDiscountedValue } from '../../utils'
 import { clearItem } from "../../redux/cart/cart.actions";
 
 import * as S from './cart-item.styles'
@@ -14,7 +15,15 @@ const CartItem = ({ className, item }) => {
             </S.ItemImage>
             <S.ItemDetails>
                 <S.Title> {item.title} </S.Title>
-                <S.Price> $ {item.price} </S.Price>
+                {
+                    !item.discount ? (<S.Price>$ {item.price}</S.Price>) 
+                    : (<S.Price>
+                          $ {getDiscountedValue(item.price, item.discount)}
+                        <S.OldPrice>
+                            $ {item.price}
+                        </S.OldPrice>
+                    </S.Price> )
+                }
             </S.ItemDetails>
             <S.Actions>
                 <S._ItemCount itemId={item.id} />

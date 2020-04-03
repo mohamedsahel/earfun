@@ -58,6 +58,14 @@ export const Price = styled.div`
     margin-top: 1rem;
 `
 
+export const OldPrice = styled.span`
+    font-size: 0.9em;
+    font-weight: 500;
+    color: ${p => p.theme.colors.red};
+    text-decoration: line-through;
+    margin-left: 1.6rem;
+`
+
 export const Actions = styled.div`
     grid-area: actions;
     display: flex;

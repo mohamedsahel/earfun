@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 
+import { getDiscountedValue } from '../../utils'
 import * as S from './order-card.styles'
 
 const VALIDE_COUPON_CODES = {
@@ -14,7 +15,7 @@ const OrderCard = ({ itemsTotal, shipping, taxes, className }) => {
     let orderTotal = itemsTotal + shipping + taxes
 
     if(coupon) {
-        orderTotal = !coupon.discount ? orderTotal : orderTotal * coupon.discount / 100 
+        orderTotal = !coupon.discount ? orderTotal : getDiscountedValue(orderTotal, coupon.discount)
     }
 
     const handleCodeSubmit = e => {

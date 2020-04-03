@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useDispatch } from 'react-redux'
 
+import { getDiscountedValue } from '../../utils'
 import { addItem } from '../../redux/cart/cart.actions'
 
 import * as S from './product-card.styles'
@@ -18,9 +19,7 @@ const ProductCard = ({ item }) => {
             <S.Title> {item.title} </S.Title>
             <S.Price>
                 $ {
-                    item.discount > 0 ? 
-                        (Math.floor(item.price * item.discount / 30))
-                    : item.price
+                    item.discount > 0 ? getDiscountedValue(item.price, item.discount) : item.price
                 }
                 
             </S.Price>
