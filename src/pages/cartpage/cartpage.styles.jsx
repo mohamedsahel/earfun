@@ -28,3 +28,9 @@ export const _OrderCard = styled(OrderCard)`
         box-shadow: ${p => p.theme.shadow.md}
     }
 `
+
+export const Empty = styled.div`
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 6rem; 
+`

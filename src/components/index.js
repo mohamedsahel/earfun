@@ -15,6 +15,8 @@ export { default as ItemCount } from './item-count/item-count.component'
 export { default as CartItem } from './cart-item/cart-item.component'
 export { default as CartItemsWrapper } from './cart-items-wrapper/cart-items-wrapper.container'
 export { default as OrderCard } from './order-card/order-card.container'
+export { default as LightBox } from './light-box/light-box.component'
+export { default as DeleteItemLightBox } from './delete-item-light-box/delete-item-light-box.container'
 
 
 

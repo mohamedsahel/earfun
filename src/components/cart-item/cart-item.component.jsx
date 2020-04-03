@@ -2,7 +2,8 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 
 import { getDiscountedValue } from '../../utils'
-import { clearItem } from "../../redux/cart/cart.actions";
+import { startClearItem } from "../../redux/cart/cart.actions"
+
 
 import * as S from './cart-item.styles'
 
@@ -28,7 +29,7 @@ const CartItem = ({ className, item }) => {
             <S.Actions>
                 <S._ItemCount itemId={item.id} />
                 <S.Clear
-                onClick={() => dispatch(clearItem(item.id))}
+                onClick={() => dispatch(startClearItem(item))}
                 >&#215;</S.Clear>
             </S.Actions>
         </S.Container>

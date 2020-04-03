@@ -9,7 +9,7 @@ const OrderCardContainer = props => {
     const cartItems = useSelector(state => state.cart.items)
     const itemsTotal = getItemsTotal(cartItems)
     const shipping = cartItems.length * 4
-    const taxes = 3.2
+    const taxes = Math.floor(itemsTotal * 2.5 / 100) 
 
     return <OrderCard  
             itemsTotal={itemsTotal} 

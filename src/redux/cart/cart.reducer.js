@@ -18,40 +18,41 @@ const INITIAL_STATE = {
             type: "earphones",
             connectWith: 'bluetooth',
             count: 1
-        },
-        {
-            id: 60,
-            title: "Beats lite K25",
-            price: 130,
-            discount: 0,
-            imageUrl: "https://i.imgur.com/NWxu1kG.png?1",
-            color: "red",
-            brand:"beats",
-            type: "headphones",
-            connectWith: 'bluetooth',
-            count: 1
-        },
+        }
     ],
+    itemToClear: null,
 }
 
 const cartReducer = (state=INITIAL_STATE, action) => {
-    switch(action.type) {
+    const {type, payload} = action
+    switch(type) {
         case types.ADD_ITEM : 
             return {
                 ...state,
-                items: addItemToCart(state.items, action.payload)
+                items: addItemToCart(state.items, payload)
             }
 
         case types.CHANGE_ITEM_COUNT : 
             return {
                 ...state,
-                items: changeCartItemCount(state.items, action.payload.itemId, action.payload.amount)
+                items: changeCartItemCount(state.items, payload.itemId, payload.amount)
             }
 
+        case types.START_CLEAR_ITEM : 
+            return {
+                ...state,
+                itemToClear: payload
+            }
         case types.CLEAR_ITEM : 
             return {
                 ...state,
-                items: clearItemFromCart(state.items, action.payload)
+                items: clearItemFromCart(state.items, payload),
+                itemToClear: null
+            }
+        case types.CANCEL_CLEAR_ITEM : 
+            return {
+                ...state,
+                itemToClear: null
             }
         
         default :

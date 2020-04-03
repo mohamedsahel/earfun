@@ -36,7 +36,7 @@ const OrderCard = ({ itemsTotal, shipping, taxes, className }) => {
         <S.Container className={className} >
             <OrderCard.Row title='Items Total' total={'$ ' + itemsTotal} />
             <OrderCard.Row title='Shipping' total={'$ ' + shipping} />
-            <OrderCard.Row title='Taxes (5%)' total={'$ ' + taxes} />
+            <OrderCard.Row title='Taxes (2.5%)' total={'$ ' + taxes} />
             {
                 coupon && (
                     coupon.discount ? 

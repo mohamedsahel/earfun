@@ -5,7 +5,7 @@ import {
   Route
 } from 'react-router-dom'
 
-import { Theme, HomePage, ShopPage, CartPage, Header } from './components'
+import { Theme, HomePage, ShopPage, CartPage, Header, DeleteItemLightBox } from './components'
 
 import GlobalStyle from './global.styles'
 
@@ -14,6 +14,7 @@ const App = () => {
     <Router>
       <Theme>
           <GlobalStyle />
+          <DeleteItemLightBox />
           <Header />
         <Switch>
           <Route exact path='/' >
