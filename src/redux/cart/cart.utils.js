@@ -1,8 +1,9 @@
 
 export const addItemToCart = (cartItems, itemToAdd) => {
-    itemToAdd.count = 1
-    cartItems.push(itemToAdd)
-    return cartItems
+    const item = { ...itemToAdd }
+    item.count = 1
+    cartItems.push(item)
+    return [...cartItems]
 }
 
 

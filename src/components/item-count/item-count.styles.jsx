@@ -40,7 +40,7 @@ export const CountButton = styled.div`
 export const CountInput = styled.input`
     width: 6.6rem;
     height: 100%;
-    border: 1px solid ${p => p.theme.colors.gray_2};
+    border: 1px solid ${p => p.theme.colors.transparent_05};
     background: transparent;
     font-size: 1.8rem;
     text-align: center;

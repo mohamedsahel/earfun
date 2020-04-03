@@ -1,2 +1,0 @@
-import { createSelectore } from 'reselect';
-

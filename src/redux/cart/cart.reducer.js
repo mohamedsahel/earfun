@@ -23,6 +23,7 @@ const INITIAL_STATE = {
     itemToClear: null,
 }
 
+
 const cartReducer = (state=INITIAL_STATE, action) => {
     const {type, payload} = action
     switch(type) {
@@ -43,12 +44,14 @@ const cartReducer = (state=INITIAL_STATE, action) => {
                 ...state,
                 itemToClear: payload
             }
+
         case types.CLEAR_ITEM : 
             return {
                 ...state,
                 items: clearItemFromCart(state.items, payload),
                 itemToClear: null
             }
+
         case types.CANCEL_CLEAR_ITEM : 
             return {
                 ...state,

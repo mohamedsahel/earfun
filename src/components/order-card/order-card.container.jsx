@@ -1,12 +1,13 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
+import { cartItemsSelector } from "../../selectors/cart.selectors";
 import { getItemsTotal } from './utils'
 
 import OrderCard from './order-card.component'
 
 const OrderCardContainer = props => {
-    const cartItems = useSelector(state => state.cart.items)
+    const cartItems = useSelector(cartItemsSelector)
     const itemsTotal = getItemsTotal(cartItems)
     const shipping = cartItems.length * 4
     const taxes = Math.floor(itemsTotal * 2.5 / 100) 

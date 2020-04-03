@@ -1,13 +1,14 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
-import { changeItemCountAsync } from "../../redux/cart/cart.actions";
+import { cartItemsSelector } from "../../selectors/cart.selectors";
+import { changeItemCountAsync } from "../../redux/cart/cart.actions"
 
 import * as S from './item-count.styles'
 
 const ItemCount = ({ itemId }) => {
     const dispatch = useDispatch()
-    const itemCount = useSelector(state => state.cart.items.find(item => item.id === itemId)).count
+    const itemCount = useSelector(cartItemsSelector).find(item => item.id === itemId).count
     return (
         <S.Container>
             <S.CountButton 

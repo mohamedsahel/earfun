@@ -6,7 +6,7 @@ export const Background = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    background: ${p => p.theme.colors.transparent_75};
+    background: rgba(0, 0, 0, 0.5);
     z-index: 20;
 `
 
