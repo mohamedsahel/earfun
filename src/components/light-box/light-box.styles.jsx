@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const Background = styled.div`
     position: fixed;
@@ -10,7 +10,19 @@ export const Background = styled.div`
     z-index: 20;
 `
 
+const scale = keyframes`
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.1);
+    } 
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    } 
+`
+
 export const Container = styled.div`
+    animation: ${scale} 0.3s ease-in;
     position: absolute;
     top: 50%;
     left: 50%;

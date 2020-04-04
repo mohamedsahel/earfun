@@ -58,9 +58,9 @@ export const shadowLight = {
 export const shadowDark = {
     sm: `0 0 0.8rem rgba(255, 255, 255, 0.05),
          0 0 1.6rem rgba(255, 255, 255, 0.05)`,
-    md: `0 0 0.8rem rgba(255, 255, 255, 0.05),
-        0 0 1.8rem rgba(255, 255, 255, 0.05),
-        0 0 3rem rgba(255, 255, 255, 0.05)`
+    md: `0 0 1.6rem rgba(255, 255, 255, 0.01),
+        0 0 2.4rem rgba(255, 255, 255, 0.02),
+        0 0 3.2rem rgba(255, 255, 255, 0.02)`
 }
 
 export const productBackgroundDark = {

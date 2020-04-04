@@ -5,7 +5,7 @@ import { clearItem, cancelClearItem } from "../../redux/cart/cart.actions";
 
 import { LightBox } from ".."
 
-import * as S from './delete-item-light-box.styles'
+import * as S from './delete-item-box.styles'
 
 const DeleteItemLightBox = ({ item }) => {
     const dispatch = useDispatch()

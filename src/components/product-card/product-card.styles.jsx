@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { Icon, DiscountLabel } from '..'
+import { DiscountLabel } from '..'
 
 
 export const Image = styled.img`
@@ -35,13 +35,22 @@ export const DiscountLabelIcon = styled(DiscountLabel)`
     left: -1.41rem;
 `
 
-export const PlusIcon = styled(Icon)`
+
+export const PlusIcon = styled.div`
     position: absolute;
     top: 22rem;
     right: 2rem;
+    height: 6rem;
+    width: 6rem;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 210%;
+    text-align: center;
     background: white;
+    border-radius: ${p => p.theme.radius.fifty};
     box-shadow: ${p => p.theme.shadow.sm};
-    transition: background 0.4s;
+    cursor: pointer;
+
 
     svg path {
         fill: black;
@@ -55,10 +64,11 @@ export const PlusIcon = styled(Icon)`
     }
 
     :active {
-        background: ${p => p.theme.colors.transparent_05};
+        background: ${p => p.theme.colors.transparent_15};
 
     }
 ` 
+
 
 
 export const Title = styled.h3`

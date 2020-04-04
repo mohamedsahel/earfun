@@ -5,7 +5,15 @@ import {
   Route
 } from 'react-router-dom'
 
-import { Theme, HomePage, ShopPage, CartPage, Header, DeleteItemLightBox } from './components'
+import { 
+  Theme,
+  HomePage, 
+  ShopPage,
+  CartPage, 
+  Header, 
+  DeleteItemBox,
+  FilterBox
+ } from './components'
 
 import GlobalStyle from './global.styles'
 
@@ -14,7 +22,8 @@ const App = () => {
     <Router>
       <Theme>
           <GlobalStyle />
-          <DeleteItemLightBox />
+          <FilterBox />
+          <DeleteItemBox />
           <Header />
         <Switch>
           <Route exact path='/' >
