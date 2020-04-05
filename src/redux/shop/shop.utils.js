@@ -5,9 +5,9 @@ export const getFilteredItems = (items, filters) => {
     return items.filter(item => ( 
             priceRange[0] <= item.price <= priceRange[1] &&
             ( !onSale || item.discount )  && 
-            colors.includes(item.color)  && 
-            brands.includes(item.brand)  &&
-            types.includes(item.type)  && 
-            connectWith.includes(item.connectWith)
+            colors.has(item.color)  && 
+            brands.has(item.brand)  &&
+            types.has(item.type)  && 
+            connectWith.has(item.connectWith)
     ))
 }

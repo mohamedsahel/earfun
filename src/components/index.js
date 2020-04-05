@@ -18,6 +18,8 @@ export { default as CartItemsWrapper } from './cart-items-wrapper/cart-items-wra
 export { default as OrderCard } from './order-card/order-card.container'
 export { default as LightBox } from './light-box/light-box.component'
 export { default as DeleteItemBox } from './delete-item-box/delete-item-box.container'
+
+export { default as BasicCheckbox } from './basic-checkbox/basic-checkbox.component'
 export { default as FilterBox } from './filter-box/filter-box.component'
 
 
