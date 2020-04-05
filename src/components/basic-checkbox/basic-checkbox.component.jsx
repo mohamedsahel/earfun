@@ -1,11 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import * as S from './basic-checkbox.styles'
 
-const BasicCheckbox = () => {
-    const [checked, setChecked] = useState(false)
+const BasicCheckbox = props => {
     return (
-        <S.CheckBox onClick={() => setChecked(!checked)} checked={checked} />
+        <S.CheckBox {...props} />
     )
 }
 

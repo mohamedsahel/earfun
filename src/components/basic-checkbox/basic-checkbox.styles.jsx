@@ -19,14 +19,14 @@ const zoom = keyframes`
 `
 
 export const CheckBox = styled.span`
-        display: flex;
+        display: inline-flex;
         justify-content: center;
         align-items: center;
         position: relative;
-        width: 1.8rem;
-        height: 1.8rem;
+        width: 1.2rem;
+        height: 1.2rem;
         padding: 0.1rem;
-        border: 1px solid ${p => p.theme.colors.blue};
+        border: 0.1rem solid ${p => p.theme.colors.blue};
         border-radius: 0.3rem;
         cursor: pointer;
 

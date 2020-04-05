@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { LightBox, BasicCheckbox } from '..'
+import { LightBox, TypesFilter } from '..'
 
 import * as S from './filter-box.styles'
 
@@ -8,7 +8,7 @@ const FilterCard = () => {
     return  (
         <LightBox>
             <S.Container>
-                <BasicCheckbox />
+                <TypesFilter />
             </S.Container>
         </LightBox>
     )

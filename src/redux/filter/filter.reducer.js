@@ -1,3 +1,5 @@
+import types from "./filter.types"
+
 
 const INITIAL_STATE = {
     filters: {
@@ -14,37 +16,40 @@ const filterReducer = (state=INITIAL_STATE, action) => {
     const { type, payload } = action
 
     switch(type) {
-        case SET_TYPES: 
+        case types.SET_TYPES: 
             return {
                 ...state,
-                types: new Set(payload)
+                filters: {
+                    ...state.filters,
+                    types: new Set(payload)
+                }
             }
 
-        case SET_CONNECT_WITH: 
+        case types.SET_CONNECT_WITH: 
             return {
                 ...state,
                 connectWith: new Set(payload)
             }
 
-        case SET_PRICE_RANGE: 
+        case types.SET_PRICE_RANGE: 
             return {
                 ...state,
                 priceRange: [...payload]
             }
 
-        case SET_COLORS: 
+        case types.SET_COLORS: 
             return {
                 ...state,
                 colors: new Set(payload)
             }
 
-        case SET_BRANDS: 
+        case types.SET_BRANDS: 
             return {
                 ...state,
                 brads: new Set(payload)
             }
 
-        case SET_ONSALE: 
+        case types.SET_ONSALE: 
             return {
                 ...state,
                 onSale: payload
@@ -54,3 +59,6 @@ const filterReducer = (state=INITIAL_STATE, action) => {
             return state
     }
 }
+
+
+export default filterReducer
