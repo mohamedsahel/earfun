@@ -22,7 +22,8 @@ export { default as DeleteItemBox } from './delete-item-box/delete-item-box.cont
 export { default as ColorCheckbox } from './color-checkbox/color-checkbox.component'
 export { default as BasicCheckbox } from './basic-checkbox/basic-checkbox.component'
 export { default as ContentCheckbox } from './content-checkbox/content-checkbox.component'
-export { default as TypesFilter } from './types-filter/types-filter.component'
+
+export { default as Filter } from './filter/filter.component'
 export { default as FilterBox } from './filter-box/filter-box.component'
 
 

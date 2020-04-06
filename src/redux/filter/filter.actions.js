@@ -1,7 +1,7 @@
-import types from './filter.types'
+import Types from './filter.types'
 
-export const setTypes = typesSet => ({
-    type: types.SET_TYPES,
-    payload: typesSet
 
+export const setFilter = (filterName, option) => ({
+    type: Types.SET_FILTER,
+    payload: { filterName, option }
 })

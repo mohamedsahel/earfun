@@ -10,6 +10,14 @@ export const ContentCheckbox = styled.div`
     border: 0.1rem solid transparent;
     background: ${p => p.theme.colors.transparent_05};
     transition: all 0.2s;
+    user-select: none;
+    cursor: pointer;
+
+    @media (pointer: fine) and (hover: hover) {
+        &:hover {
+            background: ${p => p.theme.colors.transparent_10};
+        }
+    }
 
     ${p => p.checked && css`
         background: transparent;

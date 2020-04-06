@@ -1,4 +1,5 @@
-import types from "./filter.types"
+import Types from "./filter.types"
+import { toggleInSet } from './filter.utils'
 
 
 const INITIAL_STATE = {
@@ -16,40 +17,29 @@ const filterReducer = (state=INITIAL_STATE, action) => {
     const { type, payload } = action
 
     switch(type) {
-        case types.SET_TYPES: 
+        case Types.SET_FILTER : 
+            const { filterName, option } = payload 
             return {
                 ...state,
                 filters: {
                     ...state.filters,
-                    types: new Set(payload)
+                    [filterName]: toggleInSet(state.filters[filterName], option)
                 }
             }
 
-        case types.SET_CONNECT_WITH: 
-            return {
-                ...state,
-                connectWith: new Set(payload)
-            }
-
-        case types.SET_PRICE_RANGE: 
+        case Types.SET_PRICE_RANGE: 
             return {
                 ...state,
                 priceRange: [...payload]
             }
 
-        case types.SET_COLORS: 
+        case Types.SET_COLORS: 
             return {
                 ...state,
                 colors: new Set(payload)
             }
 
-        case types.SET_BRANDS: 
-            return {
-                ...state,
-                brads: new Set(payload)
-            }
-
-        case types.SET_ONSALE: 
+        case Types.SET_ONSALE: 
             return {
                 ...state,
                 onSale: payload

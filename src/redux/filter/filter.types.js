@@ -1,6 +1,6 @@
 
 const filterActionsTypes = {
-    SET_TYPES: 'SET_TYPES'
+    SET_FILTER: 'SET_FILTER'
 }
 
 export default filterActionsTypes
