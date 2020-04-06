@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { BasicCheckbox, ContentCheckbox } from ".."
 
 export const Container = styled.div`
-    width: 20rem;
+    width: auto;
 ` 
 
 export const Title = styled.div`
@@ -16,18 +16,41 @@ export const _BasicCheckbox = styled(BasicCheckbox)`
 
 export const Options = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: center;
     margin-top: 1rem;
+
+
     > * {
-        margin-top: 0.3rem;
+        margin: 0.2rem;
+        min-width: 20rem;
+
+        ${p => p.filterName === 'colors' && css`
+            margin: 1.2rem;
+            min-width: auto;
+        ` }
     }
 `
 
 export const _ContentCheckbox = styled(ContentCheckbox)`
     text-transform: capitalize;
+    font-weight: 400;
+    ${p => {
+        switch(p.filterName){
+            case 'types':
+            case 'connectWith':
+                return css`
+                    padding: 0.4rem;
+                `
+            case 'brands':
+                return css`
+                    padding: 1rem;
+                `
+        }
+    }}
 
     svg {
-        height: 4rem;
+        height: 6rem;
         margin-right: 1.6rem;
     }
 `

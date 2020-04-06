@@ -40,4 +40,5 @@ export const Container = styled.div`
     border-radius: ${p => p.theme.radius.sm};
     transform : translate(-50%, -50%);
     background: ${p => p.theme.colors.light};
+    overflow: hidden;
 `

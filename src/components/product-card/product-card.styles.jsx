@@ -17,7 +17,7 @@ export const Container = styled.div`
     height: 38rem;
     width: 28rem;
     padding: 1.6rem;
-    border-radius: ${p => p.theme.radius.sm};
+    border-radius: ${p => p.theme.radius.md};
     background: ${p => p.theme.productBackground[p.color]};
     position: relative;
     

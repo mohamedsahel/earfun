@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { LightBox, OnsaleFilter } from '..'
+import { LightBox, Filter, OnsaleFilter, Button } from '..'
 
 import * as S from './filter-box.styles'
 
@@ -8,7 +8,15 @@ const FilterCard = () => {
     return  (
         <LightBox>
             <S.Container>
-                <OnsaleFilter  /> 
+                <Filter filterName='types' />
+                <Filter filterName='connectWith' />
+                <Filter filterName='colors' />
+                <Filter filterName='brands' />
+                <OnsaleFilter  />
+                <S.Actions>
+                    <S.Cancel>Cancel</S.Cancel>
+                    <Button value='Apply' />
+                </S.Actions>
             </S.Container>
         </LightBox>
     )

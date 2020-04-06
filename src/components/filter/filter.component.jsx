@@ -48,7 +48,9 @@ const Filter = ({ filterName='types', ...otherProps }) => {
                 checked={isAllOptionsSet()}
                 />
             </S.Title>
-            <S.Options>
+            <S.Options 
+            filterName={filterName}
+            >
             {
                 filterName === 'colors' ? 
                 defaultFilters['colors'].map((color, index) => (
@@ -66,6 +68,7 @@ const Filter = ({ filterName='types', ...otherProps }) => {
                     key={index}
                     checked={filter.has(option)} 
                     onClick={() => dispatch(setFilter(filterName, option))}
+                    filterName={filterName}
                     >
                         <Svg />
                         {
