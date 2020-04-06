@@ -88,7 +88,7 @@ export const productBackgroundLight = {
 export const THEME = {
     isLightMode: true,
     colors: {
-        green: 'rgb(50, 190, 100)',
+        green: '#58e88b',
         red: '#FF5A7C',
         blue: '#0099FF',
         ...lightMode

@@ -12,8 +12,6 @@ import { ReactComponent as Akg } from '../../assests/images/akg-logo.svg'
 import { ReactComponent as Beats } from '../../assests/images/beats-logo.svg'
 
 
-console.log(Jbl)
-
 const SVG = {
     headphones: Headphones,
     earphones: Earphones,

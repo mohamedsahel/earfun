@@ -1,7 +1,6 @@
 
 
 export const toggleInSet = (set, value) => {
-    console.log(set, value)
     if(Array.isArray(value)) {
         set = value
     } else {

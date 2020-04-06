@@ -5,4 +5,5 @@ export const Container = styled.div`
     height: 80vh;
     width: 30rem;
     margin: 2rem;
+    font-size: 1.8rem;
 `

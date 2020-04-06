@@ -8,7 +8,6 @@ export const Container = styled.div`
 export const Title = styled.div`
     display: flex;
     align-items: center;
-    font-size: 1.6rem;
 `
 
 export const _BasicCheckbox = styled(BasicCheckbox)`
@@ -32,11 +31,3 @@ export const _ContentCheckbox = styled(ContentCheckbox)`
         margin-right: 1.6rem;
     }
 `
-
-// export const Icon = {
-//     headphones: styled(Icon)`
-//     &:hover {
-//         background: none;
-//     }
-// `
-// }

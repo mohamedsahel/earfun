@@ -6,6 +6,7 @@ import DEFAULT_FILTERS from '../../redux/filter/filter.data'
 import { setFilter } from '../../redux/filter/filter.actions'
 
 import SVG from './filter.assests'
+import { ColorCheckbox } from '..'
 
 import * as S from './filter.styles'
 
@@ -16,12 +17,14 @@ const Filter = ({ filterName='types', ...otherProps }) => {
         types: Array.from(DEFAULT_FILTERS['types']),
         connectWith: Array.from(DEFAULT_FILTERS['connectWith']),
         brands: Array.from(DEFAULT_FILTERS['brands']),
+        colors: Array.from(DEFAULT_FILTERS['colors'])
     }
     
     const titles = {
         types: 'Type',
         connectWith: 'Connect with',
-        brands: 'Brand'
+        brands: 'Brand',
+        colors: 'Color'
     }
 
     const filter = useSelector(state => state.filter.filters[filterName])
@@ -47,9 +50,17 @@ const Filter = ({ filterName='types', ...otherProps }) => {
             </S.Title>
             <S.Options>
             {
+                filterName === 'colors' ? 
+                defaultFilters['colors'].map((color, index) => (
+                    <ColorCheckbox 
+                    key={index}
+                    color={color} 
+                    checked={filter.has(color)} 
+                    onClick={() => dispatch(setFilter('colors', color))}
+                    />
+                )) : 
                 defaultFilters[filterName].map((option, index) => {
                     const Svg = SVG[option]
-                    console.log(Svg)
                     return (
                     <S._ContentCheckbox 
                     key={index}

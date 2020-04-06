@@ -23,6 +23,7 @@ export { default as ColorCheckbox } from './color-checkbox/color-checkbox.compon
 export { default as BasicCheckbox } from './basic-checkbox/basic-checkbox.component'
 export { default as ContentCheckbox } from './content-checkbox/content-checkbox.component'
 
+export { default as OnsaleFilter } from './on-sale-filter/on-sale-filter.component'
 export { default as Filter } from './filter/filter.component'
 export { default as FilterBox } from './filter-box/filter-box.component'
 
