@@ -12,7 +12,8 @@ import {
   CartPage, 
   Header, 
   DeleteItemBox,
-  FilterBox
+  FilterBox,
+  ModeToggler
  } from './components'
 
 import GlobalStyle from './global.styles'
@@ -22,6 +23,7 @@ const App = () => {
     <Router>
       <Theme>
           <GlobalStyle />
+          <ModeToggler />
           <FilterBox />
           <DeleteItemBox />
           <Header />

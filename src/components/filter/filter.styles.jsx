@@ -47,6 +47,8 @@ export const _ContentCheckbox = styled(ContentCheckbox)`
                 return css`
                     padding: 1rem;
                 `
+            default:
+                return null
         }
     }}
 

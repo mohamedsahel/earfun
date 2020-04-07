@@ -1,4 +1,3 @@
-import React from 'react'
 
 import { ReactComponent as Headphones } from '../../assests/icons/headphones-icon.svg'
 import { ReactComponent as Earphones } from '../../assests/icons/earphones-icon.svg'
