@@ -22,9 +22,7 @@ const App = () => {
     <Router>
       <Theme>
           <GlobalStyle />
-          <Route exact path='/shop/filter'>
-            <FilterBox />
-          </Route>
+          <FilterBox />
           <DeleteItemBox />
           <Header />
         <Switch>

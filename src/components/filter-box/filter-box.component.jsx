@@ -1,10 +1,14 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+
+import { cancelFiltering, applyFiltersAsync } from '../../redux/filter/filter.actions'
 
 import { LightBox, Filter, OnsaleFilter, Button } from '..'
 
 import * as S from './filter-box.styles'
 
-const FilterCard = () => {
+const FilterBox = () => {
+    const dispatch = useDispatch()
     return  (
         <LightBox>
             <S.Container>
@@ -14,12 +18,16 @@ const FilterCard = () => {
                 <Filter filterName='brands' />
                 <OnsaleFilter  />
                 <S.Actions>
-                    <S.Cancel>Cancel</S.Cancel>
-                    <Button value='Apply' />
+                    <S.Cancel
+                    onClick={() => dispatch(cancelFiltering())}
+                    > Cancel </S.Cancel>
+                    <Button value='Apply'
+                    onClick={() => dispatch(applyFiltersAsync())}
+                     />
                 </S.Actions>
             </S.Container>
         </LightBox>
     )
 }
 
-export default FilterCard
+export default FilterBox

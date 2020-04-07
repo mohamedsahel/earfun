@@ -25,7 +25,7 @@ export { default as ContentCheckbox } from './content-checkbox/content-checkbox.
 
 export { default as OnsaleFilter } from './on-sale-filter/on-sale-filter.component'
 export { default as Filter } from './filter/filter.component'
-export { default as FilterBox } from './filter-box/filter-box.component'
+export { default as FilterBox } from './filter-box/filter-box.container'
 
 
 

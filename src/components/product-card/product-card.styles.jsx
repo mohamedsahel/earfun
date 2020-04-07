@@ -47,6 +47,7 @@ export const PlusIcon = styled.div`
     line-height: 210%;
     text-align: center;
     background: white;
+    color: black;
     border-radius: ${p => p.theme.radius.fifty};
     box-shadow: ${p => p.theme.shadow.sm};
     cursor: pointer;

@@ -37,5 +37,10 @@ export const Container = styled.div`
             stroke: ${p => p.fill || p.theme.colors.black}
         }
 
+        &#filter-icon {
+            stroke-width: 0.2rem;
+            stroke: ${p => p.fill || p.theme.colors.black}
+        }
+
     }
 `

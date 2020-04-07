@@ -69,6 +69,7 @@ const Filter = ({ filterName='types', ...otherProps }) => {
                     checked={filter.has(option)} 
                     onClick={() => dispatch(setFilter(filterName, option))}
                     filterName={filterName}
+                    coloredSvg={option === 'jbl' || option === 'beats'}
                     >
                         <Svg />
                         {

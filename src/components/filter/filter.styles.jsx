@@ -41,6 +41,7 @@ export const _ContentCheckbox = styled(ContentCheckbox)`
             case 'connectWith':
                 return css`
                     padding: 0.4rem;
+                    
                 `
             case 'brands':
                 return css`

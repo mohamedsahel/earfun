@@ -7,10 +7,17 @@ export const Container = styled.div`
     width: 100%;
     max-width: 102.4rem;
     margin: auto;
+    padding-bottom: 6rem;
+    
     > * {
-        border: 0.3px blue dashed;
         margin: 2em;
         margin-top: 8rem;
     }
 
+`
+
+export const NoResults = styled.span`
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top:
 `

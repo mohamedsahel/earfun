@@ -16,6 +16,7 @@ import { ReactComponent as Menu } from '../../assests/icons/menu-icon.svg'
 import { ReactComponent as Plus } from '../../assests/icons/plus-icon.svg'
 import { ReactComponent as Shop } from '../../assests/icons/shop-icon.svg'
 import { ReactComponent as Twitter } from '../../assests/icons/twitter-icon.svg'
+import { ReactComponent as Filter } from '../../assests/icons/filter-icon.svg'
 
 
 
@@ -36,5 +37,6 @@ export default {
     Menu,
     Plus,
     Shop,
-    Twitter
+    Twitter,
+    Filter,
 }

@@ -9,7 +9,8 @@ const ProductsGrid = ({ items }) => {
     return (
         <S.Container>
             {
-                items.map((item, index) => <ProductCard key={index} item={item} />)
+                !items.length ? <S.NoResults>No Results Found !!</S.NoResults>
+                : items.map((item, index) => <ProductCard key={index} item={item} />)
             }
         </S.Container>
     )

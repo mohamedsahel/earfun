@@ -13,8 +13,8 @@ const shopReducer = (state=INITIAL_STATE, action) => {
     switch(type) {
         case shopActionsTypes.FILTER_ITEMS :
             return {
-                ...state,
-                shopItems: getFilteredItems(state.shopItems, payload)
+                // ...state,
+                shopItems: getFilteredItems(SHOP_ITEMS, payload)
             }
         default :
             return state

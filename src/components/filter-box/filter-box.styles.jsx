@@ -25,6 +25,7 @@ export const Actions = styled.div`
     padding: 1.6rem;
     position: fixed;
     bottom: 0;
+    font-weight: 400;
     box-shadow: ${p => p.theme.shadow.sm};
     transform: translateX(-2rem);
 `
@@ -38,4 +39,5 @@ export const Cancel = styled.span`
     &:hover {
         color: ${p => p.theme.colors.gray_6};
     }
+
 `
