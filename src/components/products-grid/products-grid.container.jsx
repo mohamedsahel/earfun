@@ -8,6 +8,7 @@ import ProductsGrid from './products-grid.component'
 
 const ProductsGridContainer = () => {
     const items = useSelector(shopItemsSelector)
+    
     return <ProductsGrid items={sortRandomly
         (items)} />
 }

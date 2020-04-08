@@ -6,20 +6,7 @@ import { addItemToCart,
     } from './cart.utils'
 
 const INITIAL_STATE = {
-    items: [
-        {
-            id: 56,
-            title: "Apple Beats Powerbeats3 Headphones Wireless",
-            price: 80,
-            discount: 0,
-            imageUrl: "https://i.imgur.com/O7R2332.png",
-            color: "gray",
-            brand:"beats",
-            type: "earphones",
-            connectWith: 'bluetooth',
-            count: 1
-        }
-    ],
+    items: [],
     itemToClear: null,
 }
 

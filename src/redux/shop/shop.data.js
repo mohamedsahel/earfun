@@ -653,7 +653,7 @@ const SHOP_ITEMS = [
         id: 69,
         title: "Noise-cancelling Sony F10 headphones",
         price: 90,
-        discount: 0,
+        discount: 25,
         imageUrl: "https://i.imgur.com/SPcauGs.png",
         color: "black",
         brand:"sony",
