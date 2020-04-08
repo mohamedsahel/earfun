@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 import { ProductCard } from '..'
@@ -6,6 +6,10 @@ import { ProductCard } from '..'
 import * as S from './products-grid.styles'
 
 const ProductsGrid = ({ items }) => {
+    useEffect(() => {
+        window.scrollTo({top: 0})
+    })
+
     return (
         <S.Container>
         {

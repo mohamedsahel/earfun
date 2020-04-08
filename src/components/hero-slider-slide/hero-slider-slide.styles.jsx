@@ -4,7 +4,6 @@ import styled from 'styled-components'
 export const Title = styled.h1`
     font-size: 2.2rem;
     font-weight: 700;
-    margin-top: 6vh;
 `
 
 export const Price = styled.span`
@@ -14,7 +13,7 @@ export const Price = styled.span`
 
 export const Image = styled.img`
     margin: auto;
-    height: 59%;
+    height: 62%;
 `
 
 
@@ -26,15 +25,6 @@ export const Container = styled.div`
     top: 0;
     visibility: ${p => p.showen ? 'visible' : 'hidden'};
 
-    button {
-        margin-right: auto;
-        margin-left: auto;
-        
-        @media (min-width: 800px) {
-            margin-left: 0;
-
-        }
-    }
 
     > * {
         display: block;
@@ -42,7 +32,7 @@ export const Container = styled.div`
     }
 
     ${Title} {
-        margin-top: 4vh;
+        margin-top: 10vh;
     }
 
     @media (min-width: 800px) {

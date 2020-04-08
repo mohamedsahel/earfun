@@ -11,7 +11,13 @@ const DEFAULT_FILTERS = {
 
 const INITIAL_STATE = {
     applyedFilters: {...DEFAULT_FILTERS},
-    filters: {...DEFAULT_FILTERS},
+    filters: {
+        types: new Set(),
+        connectWith: new Set(),
+        colors: new Set(),
+        brands: new Set(),
+        onSale: false
+    },
     isFiltering: false
 }
 

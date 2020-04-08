@@ -16,12 +16,12 @@ const FilterBox = () => {
                 <Filter filterName='connectWith' />
                 <Filter filterName='colors' />
                 <Filter filterName='brands' />
-                <OnsaleFilter  />
+                <OnsaleFilter />
                 <S.Actions>
                     <S.Cancel
                     onClick={() => dispatch(cancelFiltering())}
                     > Cancel </S.Cancel>
-                    <Button value='Apply'
+                    <Button value='Filter'
                     onClick={() => dispatch(applyFiltersAsync())}
                      />
                 </S.Actions>

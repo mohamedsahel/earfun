@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from "react-redux"
+import PropTypes from 'prop-types'
 
 import { changeMode } from "../../redux/theme/theme.actions"
 
@@ -12,7 +13,7 @@ const ModeToggler = ({ mode='light' }) => {
         <S.Container isOpen={isOpen} >
             <S._Icon 
             icon='backArrow'
-             size='2rem' 
+             size='1.6rem' 
              svgSize='100%' 
              onClick={() => setIsOpen(!isOpen)}
              />
@@ -26,6 +27,10 @@ const ModeToggler = ({ mode='light' }) => {
                 }
         </S.Container>
     )
+}
+
+ModeToggler.propTypes = {
+    mode: PropTypes.oneOf(['light', 'dark'])
 }
 
 export default ModeToggler
