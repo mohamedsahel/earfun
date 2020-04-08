@@ -1,6 +1,5 @@
 
 export const getFilteredItems = (items, filters) => {
-    console.log(filters)
     const { types, connectWith , colors, brands, onSale } = filters
     
     return items.filter(item => ( 

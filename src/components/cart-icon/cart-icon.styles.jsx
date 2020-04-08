@@ -11,7 +11,7 @@ export const _Icon = styled(Icon)`
 `
 
 export const Count = styled.div`
-    padding: 0.22rem 0.6rem 0.22rem 0.6rem;
+    padding: 0.1rem 0.55rem 0.1rem 0.55rem;
     font-size: 1rem;
     font-weight: 500;
     background: ${p => p.theme.colors.red};
@@ -19,6 +19,6 @@ export const Count = styled.div`
     border-radius: ${p => p.theme.radius.lg};
     position: absolute;
     top: 0.3rem;
-    left: 1.8rem;
+    left: 1.85rem;
     color: white;
 `

@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { 
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  useHistory
 } from 'react-router-dom'
 
 import { 
@@ -19,6 +20,7 @@ import {
 import GlobalStyle from './global.styles'
 
 const App = () => {
+
   return (
     <Router>
       <Theme>

@@ -6,19 +6,9 @@ import { Icon } from '..'
 
 import { ReactComponent as EarfunLogo } from '../../assests/images/earfun-logo.svg'
 
-export const HeaderLogoLink = styled(Link)`
-    @media (min-width: 800px) {
-        margin-right: auto;
-        margin-left: 0;
-    }
-`
 
 export const HeaderLogo = styled(EarfunLogo)`
     height: 2.5rem;
-`
-
-export const HeaderIconLink = styled(Link)`
-    margin-left: 4rem;
 `
 
 export const HeaderIcon = styled(Icon)`
@@ -33,15 +23,11 @@ export const ItemsWrapper = styled.div`
     width: 100%;
     max-width: 120rem;
     margin: auto;
-    padding-right: 1.6rem;
-    padding-left: 1.6rem;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
 
     svg path {
         fill: ${p => p.theme.colors.black};
-    }
-
-    @media (min-width: 800px) {
-        justify-content: none;
     }
 
 `

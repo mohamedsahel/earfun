@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { useLocation } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
+
+import { usePrevious } from '../../hooks'
 import { startFiltering } from '../../redux/filter/filter.actions'
 
 import { CartIcon } from '..'
@@ -11,12 +14,20 @@ import * as S from './header.styles'
 const Header = () => {
     const dispatch = useDispatch()
     const pathName = useLocation().pathname
+    const previousPath = usePrevious(pathName)
+
+    useEffect(() => {
+        if(pathName !== previousPath) {
+            window.scrollTo({top: 0})
+        }
+    })
+
     return (
         <S.Container >
             <S.ItemsWrapper>
-                <S.HeaderLogoLink to='/' >
+                <Link to='/' >
                     <S.HeaderLogo />
-                </S.HeaderLogoLink>
+                </Link>
                 {
                     pathName === '/shop' ?
                     <S.HeaderIcon 
@@ -24,14 +35,18 @@ const Header = () => {
                     size='3.8rem' 
                     svgSize='49%' 
                     onClick={() => dispatch(startFiltering())}
-                    /> :
-                    <S.HeaderIconLink to='/shop' >
-                        <S.HeaderIcon icon='shop' size='3.8rem' svgSize='45%' />
-                    </S.HeaderIconLink>
+                    /> 
+                    :
+                    <Link to='/shop' >
+                        <S.HeaderIcon 
+                        icon='shop' 
+                        size='3.8rem' 
+                        svgSize='45%' />
+                    </Link>
                 }
-                <S.HeaderIconLink to='/cart' >
+                <Link to='/cart' >
                     <CartIcon />
-                </S.HeaderIconLink>
+                </Link>
             </S.ItemsWrapper>
         </S.Container>
     )
