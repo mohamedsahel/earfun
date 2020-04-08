@@ -1,8 +1,8 @@
-import { createSelecor } from 'reselect'
+import { createSelector } from 'reselect'
 
 export const themeSelector = state => state.theme
 
-export const isLightModeSelector = createSelecor(
+export const isLightModeSelector = createSelector(
     themeSelector,
     theme => theme.isLightMode
 )

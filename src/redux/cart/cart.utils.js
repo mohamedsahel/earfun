@@ -20,3 +20,8 @@ export const changeCartItemCount = (cartItems, itemId, amount) => {
 }
 
 export const clearItemFromCart = (cartItems, itemToClearId) => cartItems.filter(item => item.id !== itemToClearId)
+
+export const getCoupon = (couponCode, valideCoupons) => ({
+    code: couponCode, 
+    discount: null || valideCoupons[couponCode] 
+})

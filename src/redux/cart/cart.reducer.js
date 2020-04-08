@@ -2,12 +2,21 @@ import types from './cart.types'
 
 import { addItemToCart,
         changeCartItemCount,
-        clearItemFromCart
+        clearItemFromCart,
+        getCoupon
     } from './cart.utils'
 
 const INITIAL_STATE = {
     items: [],
     itemToClear: null,
+    valideCoupon: '',
+    unvalideCoupon: ''
+}
+
+const VALIDE_COUPONS = {
+    new2020: 50,
+    a2a3for: 20,
+    thank40: 40
 }
 
 
@@ -43,6 +52,12 @@ const cartReducer = (state=INITIAL_STATE, action) => {
             return {
                 ...state,
                 itemToClear: null
+            }
+
+        case types.APPLY_COUPON : 
+            return {
+                ...state,
+                coupon: getCoupon(payload, VALIDE_COUPONS)
             }
         
         default :

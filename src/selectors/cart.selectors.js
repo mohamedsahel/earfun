@@ -9,13 +9,28 @@ export const cartItemsSelector = createSelector(
     cart => cart.items
 )
 
-export const cartItemsTotalSelector = createSelector(
-    cartItemsSelector,
-    items => items.reduce((acc, item) => acc + getDiscountedValue(item.price * item.count,  item.discount)
-    , 0)
-)
-
 export const itemToClearSelector = createSelector(
     cartSelector,
     cart => cart.itemToClear
 )
+
+
+// order card
+export const cartItemsTotalSelector = createSelector(
+    [cartSelector, cartItemsSelector],
+    (cart, items) => {
+        const originTotal = items.reduce((acc, item) => acc + getDiscountedValue(item.price * item.count,  item.discount) 
+        , 0)
+
+        return cart.coupon && cart.coupon.discount ? getDiscountedValue(originTotal, cart.coupon.discount)
+        : originTotal
+    }
+)
+
+export const shippingCostSelector = createSelector(
+    cartItemsSelector,
+    items => items.reduce((acc, item) => acc + item.count, 0) * 3
+)
+
+
+

@@ -1,13 +1,13 @@
-import types from './cart.types'
+import Types from './cart.types'
 
 export const addItem = item => ({
-    type: types.ADD_ITEM,
+    type: Types.ADD_ITEM,
     payload: item
 })
 
 
 export const changeItemCount = (itemId, amount) => ({
-    type: types.CHANGE_ITEM_COUNT,
+    type: Types.CHANGE_ITEM_COUNT,
     payload: {
         itemId: itemId,
         amount: amount
@@ -16,17 +16,17 @@ export const changeItemCount = (itemId, amount) => ({
 
 
 export const startClearItem = (item) => ({
-    type: types.START_CLEAR_ITEM,
+    type: Types.START_CLEAR_ITEM,
     payload: item
 })
 
 export const clearItem = itemId => ({
-    type: types.CLEAR_ITEM,
+    type: Types.CLEAR_ITEM,
     payload: itemId
 })
 
 export const cancelClearItem = (item) => ({
-    type: types.CANCEL_CLEAR_ITEM
+    type: Types.CANCEL_CLEAR_ITEM
 })
 
 
@@ -39,3 +39,9 @@ export const changeItemCountAsync = (itemId, amount) => (dispatch, getState) => 
         dispatch(changeItemCount(itemId, amount))
     }
 }
+
+
+export const applyCoupon = couponCode => ({
+    type: Types.APPLY_COUPON,
+    payload: couponCode
+})
