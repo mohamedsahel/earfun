@@ -10,6 +10,7 @@ import {
   HomePage, 
   ShopPage,
   CartPage, 
+  CheckoutPage,
   Header, 
   DeleteItemBox,
   FilterBox,
@@ -37,6 +38,9 @@ const App = () => {
           </Route>
           <Route exact path='/cart' >
             <CartPage />
+          </Route>
+          <Route exact path='/checkout' >
+            <CheckoutPage />
           </Route>
         </Switch>
       </Theme>
