@@ -2,20 +2,21 @@ import styled, { css } from 'styled-components'
 
 
 export const Container = styled.div`
-    width: 30rem;
+    width: 100%;
     height: 6.2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 3rem;
 `
 
 export const Label = styled.label`
     display: block;
     position: relative;
     top: 3.2rem;
-    left: 1rem;
+    left: 0.6rem;
     width: 30rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: ${p => p.theme.colors.gray_4};
     z-index: 1;
     transition: 0.2s all ease-in;
@@ -32,15 +33,18 @@ export const Input = styled.input`
     width: 100%;
     height: 4rem;
     font-size: 1.6rem;
-    padding-left: 1rem;
+    font-weight: 500;
+    padding-left: 0.6rem;
     background: transparent;
     border: none;
-    border-bottom: 2px ${p => p.theme.colors.black} solid;
+    border-bottom: 0.2rem ${p => p.theme.colors.gray_5} solid;
     /* border-radius: ${p => p.theme.radius.sm}; */
     color: ${p => p.theme.colors.black};
     z-index: 2;
-
+    transition: 0.3s all ease-in;
+    
     :focus {
+        border-bottom: 0.3rem ${p => p.theme.colors.black} solid;
 
     }
 
