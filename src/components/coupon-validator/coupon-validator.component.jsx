@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
 import { applyCoupon } from '../../redux/cart/cart.actions'
@@ -10,15 +10,13 @@ const CouponValidator = () => {
 
     const coupon = useSelector(state => state.cart.coupon)
     const dispatch = useDispatch()
-    const input = useRef()
 
     const handleCodeSubmit = e => {
-        e.persist()
         e.preventDefault()
-        const code = input.current.value
+        const code = e.target.couponCode.value
         
         if(code !== '') {
-            input.current.value = ''
+            e.target.couponCode.value = ''
             dispatch(applyCoupon(code))
         } 
     }
@@ -37,8 +35,10 @@ const CouponValidator = () => {
                 )
             }
             
-            <S.CouponForm onSubmit={e => handleCodeSubmit(e)} >
-                <S.Input placeholder='Coupon code ..' ref={input} />
+            <S.CouponForm onSubmit={handleCodeSubmit} >
+                <S.Input 
+                placeholder='Coupon code ..' 
+                name='couponCode' />
                 <S.Submit 
                 type='submit'
                 value='Apply' 

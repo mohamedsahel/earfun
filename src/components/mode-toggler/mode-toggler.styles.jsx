@@ -30,7 +30,7 @@ export const Container = styled.div`
     position: fixed;
     top: 6.5rem;
     right: 0rem;
-    margin-right: -7rem;
+    margin-right: -7.7rem;
     background: ${p => p.theme.colors.light};
     z-index: 13;
     transition: margin 0.4s;
