@@ -2,8 +2,10 @@ import React from 'react'
 import { 
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from 'react-router-dom'
+
 
 import { 
   Theme,
@@ -20,7 +22,6 @@ import {
 import GlobalStyle from './global.styles'
 
 const App = () => {
-
   return (
     <Router>
       <Theme>
@@ -33,14 +34,25 @@ const App = () => {
           <Route exact path='/' >
             <HomePage />
           </Route>
-          <Route path='/shop' >
+          <Route  path='/shop' >
             <ShopPage />
           </Route>
           <Route exact path='/cart' >
             <CartPage />
           </Route>
-          <Route exact path='/checkout' >
-            <CheckoutPage />
+          <Route exact path={`/checkout`}  >
+            {
+              ({ location }) => location.state ? 
+              <CheckoutPage /> 
+              : 
+              <Redirect 
+                to={{
+                  pathname: "/cart",
+                  state: { from: location }
+                }}
+              />
+            }
+              
           </Route>
         </Switch>
       </Theme>

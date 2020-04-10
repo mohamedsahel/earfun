@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
-import { cartItemsSelector } from "../../selectors/cart.selectors";
+import { cartItemsSelector } from "../../selectors/cart.selectors"
 import * as S from './cartpage.styles'
 
 
@@ -16,7 +16,6 @@ const CartPage = () => {
                     <S._OrderCard />
                 </React.Fragment>
             }
-            
         </S.Container>
     )
 }

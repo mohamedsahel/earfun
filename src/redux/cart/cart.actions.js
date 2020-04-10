@@ -45,3 +45,8 @@ export const applyCoupon = couponCode => ({
     type: Types.APPLY_COUPON,
     payload: couponCode
 })
+
+
+export const checkoutSuccess = () => ({
+    type: Types.CHECKOUT_SUCCESS
+})

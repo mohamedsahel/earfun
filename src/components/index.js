@@ -37,6 +37,7 @@ export { default as OnsaleFilter } from './on-sale-filter/on-sale-filter.compone
 export { default as Filter } from './filter/filter.component'
 export { default as FilterBox } from './filter-box/filter-box.container'
 
+export { default as CheckoutSuccess } from './checkout-success/checkout-success.component'
 export { default as CheckoutFields } from './checkout-fields/checkout-fields.component'
 export { default as CheckoutForm } from './checkout-form/checkout-form.component'
 

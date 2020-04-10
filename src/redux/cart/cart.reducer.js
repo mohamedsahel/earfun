@@ -9,8 +9,8 @@ import { addItemToCart,
 const INITIAL_STATE = {
     items: [],
     itemToClear: null,
-    valideCoupon: '',
-    unvalideCoupon: ''
+    coupon: '',
+    checkoutSuccess: false
 }
 
 const VALIDE_COUPONS = {
@@ -58,6 +58,12 @@ const cartReducer = (state=INITIAL_STATE, action) => {
             return {
                 ...state,
                 coupon: getCoupon(payload, VALIDE_COUPONS)
+            }
+        
+        case types.CHECKOUT_SUCCESS : 
+            return {
+                ...INITIAL_STATE,
+                checkoutSuccess: true
             }
         
         default :

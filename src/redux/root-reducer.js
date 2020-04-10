@@ -8,7 +8,7 @@ const rootReducer = combineReducers({
     theme: themeReducer,
     shop: shopReducer,
     cart: cartReducer,
-    filter: filterReducer
+    filter: filterReducer,
 })
 
 export default rootReducer;

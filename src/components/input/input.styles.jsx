@@ -7,7 +7,6 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 3rem;
 `
 
 export const Label = styled.label`
@@ -38,7 +37,6 @@ export const Input = styled.input`
     background: transparent;
     border: none;
     border-bottom: 0.2rem ${p => p.theme.colors.gray_5} solid;
-    /* border-radius: ${p => p.theme.radius.sm}; */
     color: ${p => p.theme.colors.black};
     z-index: 2;
     transition: 0.3s all ease-in;
