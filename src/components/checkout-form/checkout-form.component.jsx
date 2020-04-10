@@ -1,7 +1,8 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
+import { useHistory } from 'react-router-dom'
 
-import { checkoutSuccess } from '../../redux/cart/cart.actions'
+import { clearCart } from '../../redux/cart/cart.actions'
 
 import { CheckoutFields, Button } from '..'
 
@@ -9,10 +10,12 @@ import * as S from './checkout-form.styles'
 
 const CheckoutForm = ({ amount }) => {
     const dispatch = useDispatch()
+    const history = useHistory()
 
     const handleSubmit = e => {
         e.preventDefault()
-        dispatch(checkoutSuccess())
+        history.push('./checkout', {checkout: 'success'})
+        dispatch(clearCart())
     }
 
     return (

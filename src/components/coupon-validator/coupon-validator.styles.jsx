@@ -39,6 +39,8 @@ export const UnvalideCoupon = styled.div`
 `
 
 export const CouponForm = styled.form`
+    display: flex;
+    align-items: center;
     margin-top: 1rem;
     border: 1px ${p => p.theme.colors.black} solid;
     border-radius: ${p => p.theme.radius.sm};

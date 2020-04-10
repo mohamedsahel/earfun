@@ -13,6 +13,7 @@ import {
   ShopPage,
   CartPage, 
   CheckoutPage,
+  NoMatchPage,
   Header, 
   DeleteItemBox,
   FilterBox,
@@ -34,7 +35,7 @@ const App = () => {
           <Route exact path='/' >
             <HomePage />
           </Route>
-          <Route  path='/shop' >
+          <Route exact  path='/shop' >
             <ShopPage />
           </Route>
           <Route exact path='/cart' >
@@ -53,6 +54,9 @@ const App = () => {
               />
             }
               
+          </Route>
+          <Route path="*">
+            <NoMatchPage />
           </Route>
         </Switch>
       </Theme>

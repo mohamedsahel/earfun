@@ -6,7 +6,7 @@ const cartActionsTypes = {
     CLEAR_ITEM: 'CLEAR_ITEM', 
     CANCEL_CLEAR_ITEM: 'CANCEL_CLEAR_ITEM',
     APPLY_COUPON: 'APPLY_COUPON',
-    CHECKOUT_SUCCESS: 'CHECKOUT_SUCCESS'
+    CLEAR_CART: 'CLEAR_CART'
 }
 
 export default cartActionsTypes

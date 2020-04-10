@@ -13,14 +13,11 @@ import * as S from './header.styles'
 
 const Header = () => {
     const dispatch = useDispatch()
-    const pathName = useLocation().pathname
-    const previousPath = usePrevious(pathName)
+    const location = useLocation()
 
     useEffect(() => {
-        if(pathName !== previousPath) {
-            window.scrollTo({top: 0})
-        }
-    })
+        window.scrollTo({top: 0})
+    }, [location])
 
     return (
         <S.Container >
@@ -29,7 +26,7 @@ const Header = () => {
                     <S.HeaderLogo />
                 </Link>
                 {
-                    pathName === '/shop' ?
+                    location.pathname === '/shop' ?
                     <S.HeaderIcon 
                     icon='Filter' 
                     size='3.8rem' 

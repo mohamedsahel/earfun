@@ -6,6 +6,7 @@ import { ProductCard } from '..'
 import * as S from './products-grid.styles'
 
 const ProductsGrid = ({ items }) => {
+
     useEffect(() => {
         window.scrollTo({top: 0})
     })

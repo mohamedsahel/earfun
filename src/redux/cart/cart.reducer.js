@@ -10,7 +10,6 @@ const INITIAL_STATE = {
     items: [],
     itemToClear: null,
     coupon: '',
-    checkoutSuccess: false
 }
 
 const VALIDE_COUPONS = {
@@ -60,10 +59,9 @@ const cartReducer = (state=INITIAL_STATE, action) => {
                 coupon: getCoupon(payload, VALIDE_COUPONS)
             }
         
-        case types.CHECKOUT_SUCCESS : 
+        case types.CLEAR_CART : 
             return {
-                ...INITIAL_STATE,
-                checkoutSuccess: true
+                ...INITIAL_STATE
             }
         
         default :

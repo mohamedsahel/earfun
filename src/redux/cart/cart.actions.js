@@ -47,6 +47,6 @@ export const applyCoupon = couponCode => ({
 })
 
 
-export const checkoutSuccess = () => ({
-    type: Types.CHECKOUT_SUCCESS
+export const clearCart = () => ({
+    type: Types.CLEAR_CART
 })
