@@ -14,10 +14,6 @@ export const Content = styled.div`
     margin: auto;
     margin-top: 10rem;
 
-    a {
-        text-decoration: none;
-    }
-
     button {
         font-size: 1.8rem;
         padding: 1.2rem 3rem 1.2rem 3rem;

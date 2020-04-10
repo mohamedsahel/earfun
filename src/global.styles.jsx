@@ -58,6 +58,7 @@ const GlobalStyle = createGlobalStyle`
 
     button, a {
       cursor: pointer;
+      text-decoration: none;
     }
 
     img, video, svg {
