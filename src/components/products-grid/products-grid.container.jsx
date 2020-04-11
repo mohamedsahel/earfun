@@ -34,9 +34,9 @@ const ProductsGridContainer = () => {
     }, [dispatch])
     
     
-    // useEffect(() => {
-    //     window.scrollTo({top: 0})
-    // }, [shopItems])
+    useEffect(() => {
+        window.scrollTo({top: 0})
+    }, [shopItems])
         
         
     return (

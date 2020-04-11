@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 
-import { clearItem, cancelClearItem } from "../../redux/cart/cart.actions";
+import { clearItemAsync, cancelClearItem } from "../../redux/cart/cart.actions";
 
 import { LightBox } from ".."
 
@@ -17,7 +17,7 @@ const DeleteItemLightBox = ({ item }) => {
                 </S.Quation>
                 <S.Actions>
                     <S.Cancel onClick={(() => dispatch(cancelClearItem()))} >Cancel</S.Cancel>
-                    <S.ConfirmButton value='Clear' onClick={() => dispatch(clearItem(item.id))} />
+                    <S.ConfirmButton value='Clear' onClick={() => dispatch(clearItemAsync(item.id))} />
                 </S.Actions>
             </S.Container>
         </LightBox>

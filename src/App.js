@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect
+  Redirect,
 } from 'react-router-dom'
 
 
@@ -17,7 +17,8 @@ import {
   Header, 
   DeleteItemBox,
   FilterBox,
-  ModeToggler
+  ModeToggler,
+  Snackbar
  } from './components'
 
 import GlobalStyle from './global.styles'
@@ -30,6 +31,7 @@ const App = () => {
           <ModeToggler />
           <FilterBox />
           <DeleteItemBox />
+          <Snackbar />
           <Header />
         <Switch>
           <Route exact path='/' >

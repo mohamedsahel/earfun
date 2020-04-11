@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { cartItemsSelector } from "../../selectors/cart.selectors"
-import { addItem, clearItem } from '../../redux/cart/cart.actions'
+import { addItemAsync, startClearItem } from '../../redux/cart/cart.actions'
 
 import * as S from './add-to-cart-button.styles'
 
@@ -18,13 +18,13 @@ const AddToCartButton = ({ item, ...otherProps }) => {
         {
             !isAddedToCart ? 
             <S.PlusIcon 
-            onClick={() => dispatch(addItem(item))} 
+            onClick={() => dispatch(addItemAsync(item))} 
             {...otherProps}
             > &#43; 
             </S.PlusIcon>
             : 
             <S.PlusIcon 
-            onClick={() => dispatch(clearItem(item.id))} 
+            onClick={() => dispatch(startClearItem(item))} 
             {...otherProps}
             > &#8722; </S.PlusIcon>
         }

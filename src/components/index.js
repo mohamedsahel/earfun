@@ -41,6 +41,8 @@ export { default as CheckoutSuccess } from './checkout-success/checkout-success.
 export { default as CheckoutFields } from './checkout-fields/checkout-fields.component'
 export { default as CheckoutForm } from './checkout-form/checkout-form.component'
 
+export { default as Snackbar } from './snackbar/snackbar.container'
+
 // theme
 export { default as Theme } from './theme/theme.component'
 

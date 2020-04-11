@@ -1,9 +1,27 @@
 import Types from './cart.types'
+import { toggleSnackbar } from '../snackbar/snackbar.actions'
 
 export const addItem = item => ({
     type: Types.ADD_ITEM,
     payload: item
 })
+
+const showHideSnackbar = (dispatch, message) => {
+    const showSnackbar = new Promise(resolve => {
+        setTimeout(() => {
+            dispatch(toggleSnackbar(message))
+            resolve()
+        }, 300)
+    })
+    
+    showSnackbar.then(() => setTimeout(() => dispatch(toggleSnackbar(message)), 4000))
+    
+}
+
+export const addItemAsync = item => dispatch => {
+    dispatch(addItem(item))
+    showHideSnackbar(dispatch, 'Item successfuly added to your bag')
+}
 
 
 export const changeItemCount = (itemId, amount) => ({
@@ -25,7 +43,13 @@ export const clearItem = itemId => ({
     payload: itemId
 })
 
-export const cancelClearItem = (item) => ({
+export const clearItemAsync = itemId => dispatch => {
+    dispatch(clearItem(itemId))
+    showHideSnackbar(dispatch, 'Item cleared from your bag')
+}
+
+
+export const cancelClearItem = () => ({
     type: Types.CANCEL_CLEAR_ITEM
 })
 
