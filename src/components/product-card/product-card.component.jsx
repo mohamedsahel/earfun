@@ -8,7 +8,6 @@ import { AddToCartButton } from '..'
 import * as S from './product-card.styles'
 
 const ProductCard = ({ item }) => {
-    console.log('propdact card rendered')
     return(
         <S.Container color={item.color} >
             <S.Image src={item.imageUrl} alt={item.title} />

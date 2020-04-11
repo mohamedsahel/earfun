@@ -6,15 +6,13 @@ import { ProductCard } from '..'
 
 import * as S from './products-grid.styles'
 
-const ProductsGrid = ({ items }) => {
+const ProductsGrid = ({ items, noResults }) => {
 
     return (
         <S.Container >
-        {
-            !items.length ? <S.NoResults>No Results Found !!</S.NoResults>
-            : 
-            items.map((item, index) => <ProductCard key={index} item={item} />)
-        }
+            { 
+            noResults ? <S.NoResults>No Results Found !!</S.NoResults>
+            : items.map((item, index) => <ProductCard key={index} item={item} />) }
         </S.Container>
     )
 }

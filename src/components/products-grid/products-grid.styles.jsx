@@ -19,5 +19,4 @@ export const Container = styled.div`
 export const NoResults = styled.span`
     font-size: 1.8rem;
     font-weight: 500;
-    margin-top:
 `
