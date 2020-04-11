@@ -1,6 +1,10 @@
-import shopActionsTypes from './shop.types'
+import Types from './shop.types'
 
 export const filterItems = filters => ({
-    type: shopActionsTypes.FILTER_ITEMS,
+    type: Types.FILTER_ITEMS,
     payload: filters
+})
+
+export const loadNextPage = () => ({
+    type: Types.LOAD_NEXT_PAGE
 })

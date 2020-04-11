@@ -8,7 +8,7 @@ import * as S from './checkout-success.styles'
 
 const CheckoutSuccess = props => {
     return (
-        <S.Container style={{ height: window.innerHeight }} {...props} >
+        <S.Container {...props} >
         <Confetti />
         <S.Content>
             <S.BigTitle>Congratulation !!</S.BigTitle>

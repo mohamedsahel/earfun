@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom"
 import { Link } from 'react-router-dom'
 
 
-import { usePrevious } from '../../hooks'
 import { startFiltering } from '../../redux/filter/filter.actions'
 
 import { CartIcon } from '..'

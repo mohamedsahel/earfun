@@ -467,7 +467,7 @@ const SHOP_ITEMS = [
         title: "Beats Solo 2 Headphones Wireless",
         price: 94,
         discount: 0,
-        imageUrl: "https://i.imgur.com/5c7cexo.png",
+        imageUrl: "https://i.imgur.com/5c7cexo.png?1",
         color: "blue",
         brand:"beats",
         type: "headphones",

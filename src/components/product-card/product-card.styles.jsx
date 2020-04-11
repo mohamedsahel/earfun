@@ -32,7 +32,7 @@ export const Container = styled.div`
 export const DiscountLabelIcon = styled(DiscountLabel)`
     position: absolute;
     top: 23.4rem;
-    left: -1.41rem;
+    left: -1.36rem;
 `
 
 
