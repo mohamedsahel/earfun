@@ -2,36 +2,24 @@ import React, { useEffect, useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
 import { loadNextPage } from '../../redux/shop/shop.actions'
-import { shopItemsSelector, displayedItemsSelector } from "../../selectors/shop.selectors";
+import { shopItemsSelector, displayedItemsSelector } from "../../selectors/shop.selectors"
+
+import { useIntersection } from '../../hooks'
 
 import ProductsGrid from './products-grid.component'
 
 
 const ProductsGridContainer = () => {
     const items = useSelector(displayedItemsSelector)
-    const dispatch = useDispatch()
     const shopItems = useSelector(shopItemsSelector)
-    const observerRef = useRef()
+    const dispatch = useDispatch()
+    const observerRef = useRef(null)
+    let isIntersection = useIntersection(observerRef)
     
 
     useEffect(() => {
-
-        const scrollObserver = node => {
-        const func = enteries => {
-            enteries.forEach(entery => {
-                if(entery.isIntersecting) {
-                    dispatch(loadNextPage())
-                }
-                })
-            } 
-
-            let observer = new IntersectionObserver(func)
-            observer.observe(node)
-        }
-
-        scrollObserver(observerRef.current)
-    }, [dispatch])
-    
+        if(isIntersection) dispatch(loadNextPage())
+    }, [isIntersection, dispatch])
     
     useEffect(() => {
         window.scrollTo({top: 0})

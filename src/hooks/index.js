@@ -1,13 +1,2 @@
-import  { useEffect, useRef } from 'react'
-
-export const usePrevious = (value) => {
-    const ref = useRef()
-
-    useEffect(() => {
-        ref.current = value
-    })
-
-    return ref.current
-
-    
-}
+export { default as usePrevious } from './usePrevious.hook'
+export { default as useIntersection } from './useIntersection.hook'
