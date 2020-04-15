@@ -2,16 +2,16 @@ import React, { useEffect, useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
 import { loadNextPage } from '../../redux/shop/shop.actions'
+import { shopItemsSelector, displayedItemsSelector } from "../../selectors/shop.selectors";
 
 import ProductsGrid from './products-grid.component'
 
 
 const ProductsGridContainer = () => {
-    const items = useSelector(state => state.shop.displayedItems)
+    const items = useSelector(displayedItemsSelector)
     const dispatch = useDispatch()
-    const shopItems = useSelector(state => state.shop.shopItems)
+    const shopItems = useSelector(shopItemsSelector)
     const observerRef = useRef()
-
     
 
     useEffect(() => {
@@ -20,7 +20,6 @@ const ProductsGridContainer = () => {
         const func = enteries => {
             enteries.forEach(entery => {
                 if(entery.isIntersecting) {
-                    console.log(true)
                     dispatch(loadNextPage())
                 }
                 })

@@ -1,43 +1,23 @@
 import React from 'react'
-import { useSelector, useDispatch } from "react-redux"
-
-import DEFAULT_FILTERS from '../../redux/filter/filter.data'
+import { useDispatch } from "react-redux"
+import { PropTypes } from "prop-types"
 
 import { setFilter } from '../../redux/filter/filter.actions'
 
-import SVG from './filter.assests'
+import SVG from './filter.assests.js'
 import { ColorCheckbox } from '..'
 
 import * as S from './filter.styles'
 
 
-const Filter = ({ filterName='types', ...otherProps }) => {
+const Filter = ({ filterName, filter, isAllOptionsSet, titles, defaultFilters, ...otherProps }) => {
 
-    const defaultFilters = {
-        types: Array.from(DEFAULT_FILTERS['types']),
-        connectWith: Array.from(DEFAULT_FILTERS['connectWith']),
-        brands: Array.from(DEFAULT_FILTERS['brands']),
-        colors: Array.from(DEFAULT_FILTERS['colors'])
-    }
-    
-    const titles = {
-        types: 'Type',
-        connectWith: 'Connect with',
-        brands: 'Brand',
-        colors: 'Color'
-    }
-
-    const filter = useSelector(state => state.filter.filters[filterName])
     const dispatch = useDispatch()
-
-
-    const isAllOptionsSet = () => filter.size === defaultFilters[filterName].length
 
     const handleAllBoxClick = () => {
         if(isAllOptionsSet()) dispatch(setFilter(filterName, []))
         else dispatch(setFilter(filterName, defaultFilters[filterName]))
     }
-
 
     return (
         <S.Container {...otherProps}>
@@ -82,6 +62,15 @@ const Filter = ({ filterName='types', ...otherProps }) => {
         </S.Container>
     )
     
+}
+
+
+Filter.propTypes = {
+    filterName: PropTypes.oneOf(['types', 'connectWith', 'colors', 'brands']),
+    filter: PropTypes.object.isRequired,
+    isAllOptionsSet: PropTypes.func.isRequired,
+    titles: PropTypes.object.isRequired,
+    defaultFilters: PropTypes.object.isRequired
 }
 
 export default Filter

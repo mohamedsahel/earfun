@@ -11,3 +11,8 @@ export const onSaleFilterSelector = createSelector(
     filterSelector,
     filter => filter.filters.onSale
 )
+
+export const filterSelectorFunc = filterName => createSelector(
+    filterSelector,
+    filter => filter.filters[filterName]
+)

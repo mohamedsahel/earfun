@@ -2,13 +2,14 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
 import { applyCoupon } from '../../redux/cart/cart.actions'
+import { couponSelector } from '../../selectors/cart.selectors'
 
 import * as S from './coupon-validator.styles'
 
 
 const CouponValidator = () => {
 
-    const coupon = useSelector(state => state.cart.coupon)
+    const coupon = useSelector(couponSelector)
     const dispatch = useDispatch()
 
     const handleCodeSubmit = e => {

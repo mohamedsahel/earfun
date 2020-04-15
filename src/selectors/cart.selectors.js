@@ -14,6 +14,11 @@ export const itemToClearSelector = createSelector(
     cart => cart.itemToClear
 )
 
+// coupon
+export const couponSelector = createSelector(
+    cartSelector,
+    cart => cart.coupon
+)
 
 // order card
 export const cartItemsTotalSelector = createSelector(

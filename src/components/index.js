@@ -34,7 +34,7 @@ export { default as BasicCheckbox } from './basic-checkbox/basic-checkbox.compon
 export { default as ContentCheckbox } from './content-checkbox/content-checkbox.component'
 
 export { default as OnsaleFilter } from './on-sale-filter/on-sale-filter.component'
-export { default as Filter } from './filter/filter.component'
+export { default as Filter } from './filter/filter.container'
 export { default as FilterBox } from './filter-box/filter-box.container'
 
 export { default as CheckoutSuccess } from './checkout-success/checkout-success.component'
