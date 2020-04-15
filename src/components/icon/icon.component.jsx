@@ -23,4 +23,4 @@ Icon.propTypes = {
     onClick: PropTypes.func
 }
 
-export default Icon
+export default React.memo(Icon)

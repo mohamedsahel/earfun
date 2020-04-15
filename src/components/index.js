@@ -7,7 +7,8 @@ export { default as Button } from './button/button.component'
 export { default as ModeToggler } from './mode-toggler/mode-toggler.container'
 export { default as Input } from './input/input.component'
 
-export { default as CartIcon } from './cart-icon/cart-item.container'
+export { default as CartIcon } from './cart-icon/cart-icon.container'
+export { default as ShopIcon } from './shop-icon/shop-icon.component'
 export { default as Header } from './header/header.component'
 
 export { default as ShareIcons } from './share-icons/share-icons.component'
@@ -47,11 +48,3 @@ export { default as Snackbar } from './snackbar/snackbar.container'
 export { default as Theme } from './theme/theme.component'
 
 
-
-
-// Pages
-export { default as ShopPage } from '../pages/shoppage/shoppage.component'
-export { default as CartPage } from '../pages/cartpage/cartpage.component'
-export { default as HomePage } from '../pages/homepage/homepage.component'
-export { default as CheckoutPage } from '../pages/checkoutpage/checkoutpage.component'
-export { default as NoMatchPage } from '../pages/nomatchpage/nomatchpage.component'

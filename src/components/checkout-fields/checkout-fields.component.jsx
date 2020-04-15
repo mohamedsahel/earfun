@@ -13,23 +13,23 @@ const CheckoutFields = () => {
             <Input
             label='Full Name'
             name='name'
-            // required
+            required
              />
             <Input
             label='Email'
             type='email'
             name='email'
-            // required
+            required
              />
             <Input 
             label='City'
             name='city'
-            // required
+            required
             />
             <Input
             label='Address'
             name='address'
-            // required
+            required
              />
              <Input 
              label='Zip Code'
@@ -41,15 +41,15 @@ const CheckoutFields = () => {
              </S.Title>
             <Input 
             label='Card number'
-            // required
+            required
             />
             <Input 
             label='MM/YY'
-            // required
+            required
             />
             <Input 
             label='CVC'
-            // required
+            required
             />
         </>
     )

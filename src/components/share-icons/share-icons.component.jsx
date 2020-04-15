@@ -44,4 +44,4 @@ ShareIcons.propTypes = {
     mediaSrc: PropTypes.string
 }
 
-export default ShareIcons
+export default React.memo(ShareIcons)

@@ -26,7 +26,7 @@ const shopReducer = (state=INITIAL_STATE, action) => {
         case Types.LOAD_NEXT_PAGE :
             return {
                 ...state,
-                displayedItems: displayedItems.concat(getNextPage(shopItems, currentPage + 1)),
+                displayedItems: [...displayedItems, ...getNextPage(shopItems, currentPage + 1)],
                 currentPage: currentPage + 1
             }
 

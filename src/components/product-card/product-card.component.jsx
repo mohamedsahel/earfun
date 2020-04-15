@@ -8,6 +8,7 @@ import { AddToCartButton } from '..'
 import * as S from './product-card.styles'
 
 const ProductCard = ({ item }) => {
+    console.log('product card')
     return(
         <S.Container color={item.color} >
             <S.Image src={item.imageUrl} alt={item.title} />
@@ -36,4 +37,4 @@ ProductCard.propTypes = {
     item: PropTypes.object.isRequired
 }
 
-export default ProductCard
+export default React.memo(ProductCard)

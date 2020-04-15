@@ -36,4 +36,4 @@ AddToCartButton.propTypes = {
     item: PropTypes.object.isRequired
 }
 
-export default AddToCartButton
+export default React.memo(AddToCartButton)

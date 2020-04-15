@@ -1,17 +1,10 @@
 import styled from 'styled-components'
 
-
-import { Icon } from '..'
-
 import { ReactComponent as EarfunLogo } from '../../assests/images/earfun-logo.svg'
 
 
 export const HeaderLogo = styled(EarfunLogo)`
     height: 2.5rem;
-`
-
-export const HeaderIcon = styled(Icon)`
-    border-radius: ${p => p.theme.radius.sm};
 `
 
 export const ItemsWrapper = styled.div`

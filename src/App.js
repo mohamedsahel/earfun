@@ -8,12 +8,15 @@ import {
 
 
 import { 
-  Theme,
   HomePage, 
   ShopPage,
   CartPage, 
   CheckoutPage,
   NoMatchPage,
+ } from './pages'
+
+import { 
+  Theme,
   Header, 
   DeleteItemModal,
   FilterModal,

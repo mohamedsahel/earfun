@@ -9,10 +9,21 @@ export const cartItemsSelector = createSelector(
     cart => cart.items
 )
 
+export const cartItemsCountSelector = createSelector(
+    cartItemsSelector,
+    cartItems => cartItems.length
+)
+
+export const itemCountSelector = itemId => createSelector(
+    cartItemsSelector,
+    cartItems => cartItems.find(item => item.id === itemId).count
+)
+
 export const itemToClearSelector = createSelector(
     cartSelector,
     cart => cart.itemToClear
 )
+
 
 // coupon
 export const couponSelector = createSelector(

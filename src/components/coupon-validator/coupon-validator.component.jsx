@@ -50,4 +50,4 @@ const CouponValidator = () => {
 }
 
 
-export default CouponValidator
+export default React.memo(CouponValidator)

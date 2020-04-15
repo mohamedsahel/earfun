@@ -36,4 +36,4 @@ const CartItem = ({ className, item }) => {
     )
 }
 
-export default CartItem
+export default React.memo(CartItem)
