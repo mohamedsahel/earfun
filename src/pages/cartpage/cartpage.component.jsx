@@ -1,12 +1,12 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
-import { cartItemsSelector } from "../../selectors/cart.selectors"
+import { cartItemsCountSelector } from "../../selectors/cart.selectors"
 import * as S from './cartpage.styles'
 
 
 const CartPage = () => {
-    const cartItemNum = useSelector(cartItemsSelector).length
+    const cartItemNum = useSelector(cartItemsCountSelector)
     return (
         <S.Container>
             {
