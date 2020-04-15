@@ -1,6 +1,5 @@
 
 import { ReactComponent as EarfunLogo } from '../../assests/icons/earfun-logo-icon.svg'
-import { ReactComponent as AddToCart } from '../../assests/icons/add-to-cart-icon.svg'
 import { ReactComponent as Arrow } from '../../assests/icons/arrow-icon.svg'
 import { ReactComponent as BackArrow } from '../../assests/icons/back-arrow-icon.svg'
 import { ReactComponent as Bag } from '../../assests/icons/bag-icon.svg'
@@ -12,8 +11,6 @@ import { ReactComponent as Headphones } from '../../assests/icons/headphones-ico
 import { ReactComponent as Heart } from '../../assests/icons/heart-icon.svg'
 import { ReactComponent as Pinterest } from '../../assests/icons/pinterest-icon.svg'
 import { ReactComponent as Login } from '../../assests/icons/login-icon.svg'
-import { ReactComponent as Menu } from '../../assests/icons/menu-icon.svg'
-import { ReactComponent as Plus } from '../../assests/icons/plus-icon.svg'
 import { ReactComponent as Shop } from '../../assests/icons/shop-icon.svg'
 import { ReactComponent as Twitter } from '../../assests/icons/twitter-icon.svg'
 import { ReactComponent as Filter } from '../../assests/icons/filter-icon.svg'
@@ -22,7 +19,6 @@ import { ReactComponent as Filter } from '../../assests/icons/filter-icon.svg'
 
 export default {
     EarfunLogo,
-    AddToCart,
     Arrow,
     BackArrow,
     Bag,
@@ -34,8 +30,6 @@ export default {
     Heart,
     Pinterest,
     Login,
-    Menu,
-    Plus,
     Shop,
     Twitter,
     Filter,

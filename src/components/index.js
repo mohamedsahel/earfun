@@ -26,8 +26,8 @@ export { default as CartItemsWrapper } from './cart-items-wrapper/cart-items-wra
 export { default as CouponValidator } from './coupon-validator/coupon-validator.component'
 export { default as OrderCard } from './order-card/order-card.container'
 
-export { default as LightBox } from './light-box/light-box.component'
-export { default as DeleteItemBox } from './delete-item-box/delete-item-box.container'
+export { default as Modal } from './modal/modal.component'
+export { default as DeleteItemModal } from './delete-item-modal/delete-item-modal.container'
 
 export { default as ColorCheckbox } from './color-checkbox/color-checkbox.component'
 export { default as BasicCheckbox } from './basic-checkbox/basic-checkbox.component'
@@ -35,7 +35,7 @@ export { default as ContentCheckbox } from './content-checkbox/content-checkbox.
 
 export { default as OnsaleFilter } from './on-sale-filter/on-sale-filter.component'
 export { default as Filter } from './filter/filter.container'
-export { default as FilterBox } from './filter-box/filter-box.container'
+export { default as FilterModal } from './filter-modal/filter-modal.container'
 
 export { default as CheckoutSuccess } from './checkout-success/checkout-success.component'
 export { default as CheckoutFields } from './checkout-fields/checkout-fields.component'

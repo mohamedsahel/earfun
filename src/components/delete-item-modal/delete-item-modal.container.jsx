@@ -3,13 +3,13 @@ import  { useSelector } from 'react-redux'
 
 import { itemToClearSelector } from "../../selectors/cart.selectors";
 
-import DeleteItemBox from './delete-item-box.component'
+import DeleteItemModal from './delete-item-modal.component'
 
-const DeleteItemLightBoxContainer = () => {
+const DeleteItemModalContainer = () => {
     const itemToClear = useSelector(itemToClearSelector)
     if(itemToClear !== null) {
-        return <DeleteItemBox item={itemToClear} />
+        return <DeleteItemModal item={itemToClear} />
     } else return null
 }
 
-export default DeleteItemLightBoxContainer
+export default DeleteItemModalContainer

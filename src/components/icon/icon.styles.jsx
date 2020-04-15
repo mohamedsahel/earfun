@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
     display: inline-flex;
@@ -10,13 +10,16 @@ export const Container = styled.div`
     
     @media (pointer: fine) and (hover: hover) {
         cursor: pointer;
-        &:hover {
-            background: ${p => p.theme.colors.transparent_05}
-        }
+        
+        ${p => p.hover && css`
+            &:hover {
+                background: ${p => p.theme.colors.transparent_05}
+            }
 
-        &:active {
-            background: ${p => p.theme.colors.transparent_10};
-        }
+            &:active {
+                background: ${p => p.theme.colors.transparent_10};
+            }
+        ` }
     }
 
 
@@ -29,7 +32,7 @@ export const Container = styled.div`
             fill: ${p => p.fill || p.theme.colors.black};
         }
 
-        line, #menu-icon {
+        line {
             stroke: ${p => p.fill || p.theme.colors.black};
         }
 

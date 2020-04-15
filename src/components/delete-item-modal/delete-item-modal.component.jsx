@@ -3,14 +3,14 @@ import { useDispatch } from 'react-redux'
 
 import { clearItemAsync, cancelClearItem } from "../../redux/cart/cart.actions";
 
-import { LightBox } from ".."
+import { Modal } from ".."
 
-import * as S from './delete-item-box.styles'
+import * as S from './delete-item-modal.styles'
 
-const DeleteItemLightBox = ({ item }) => {
+const DeleteItemModal = ({ item }) => {
     const dispatch = useDispatch()
     return (
-        <LightBox>
+        <Modal>
             <S.Container>
                 <S.Quation>
                     Do you really want to clear <img src={item.imageUrl} alt={item.title} /> from cart ? 
@@ -20,8 +20,8 @@ const DeleteItemLightBox = ({ item }) => {
                     <S.ConfirmButton value='Clear' onClick={() => dispatch(clearItemAsync(item.id))} />
                 </S.Actions>
             </S.Container>
-        </LightBox>
+        </Modal>
     )
 }
 
-export default DeleteItemLightBox
+export default DeleteItemModal

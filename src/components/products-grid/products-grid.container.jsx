@@ -9,7 +9,7 @@ import { useIntersection } from '../../hooks'
 import ProductsGrid from './products-grid.component'
 
 
-const ProductsGridContainer = () => {
+const ProductsGridContainer = props => {
     const items = useSelector(displayedItemsSelector)
     const shopItems = useSelector(shopItemsSelector)
     const dispatch = useDispatch()
@@ -28,7 +28,7 @@ const ProductsGridContainer = () => {
         
     return (
     <div >
-        <ProductsGrid  items={items} noResults={!shopItems.length} />
+        <ProductsGrid  items={items} noResults={!shopItems.length} {...props} />
         <div
         style={{ height: '1rem' }}
         ref={observerRef} />

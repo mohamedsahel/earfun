@@ -3,14 +3,14 @@ import { useDispatch } from 'react-redux'
 
 import { cancelFiltering, applyFiltersAsync } from '../../redux/filter/filter.actions'
 
-import { LightBox, Filter, OnsaleFilter, Button } from '..'
+import { Modal, Filter, OnsaleFilter, Button } from '..'
 
-import * as S from './filter-box.styles'
+import * as S from './filter-modal.styles'
 
-const FilterBox = () => {
+const FilterModal = () => {
     const dispatch = useDispatch()
     return  (
-        <LightBox>
+        <Modal>
             <S.Container>
                 <Filter filterName='types' />
                 <Filter filterName='connectWith' />
@@ -26,8 +26,8 @@ const FilterBox = () => {
                      />
                 </S.Actions>
             </S.Container>
-        </LightBox>
+        </Modal>
     )
 }
 
-export default FilterBox
+export default FilterModal

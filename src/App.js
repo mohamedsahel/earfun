@@ -15,8 +15,8 @@ import {
   CheckoutPage,
   NoMatchPage,
   Header, 
-  DeleteItemBox,
-  FilterBox,
+  DeleteItemModal,
+  FilterModal,
   ModeToggler,
   Snackbar
  } from './components'
@@ -29,8 +29,6 @@ const App = () => {
       <Theme>
           <GlobalStyle />
           <ModeToggler />
-          <FilterBox />
-          <DeleteItemBox />
           <Snackbar />
           <Header />
         <Switch>
@@ -49,10 +47,10 @@ const App = () => {
               <CheckoutPage /> 
               : 
               <Redirect 
-                to={{
-                  pathname: "/cart",
-                  state: { from: location }
-                }}
+              to={{
+                pathname: "/cart",
+                state: { from: location }
+              }}
               />
             }
               
@@ -61,6 +59,10 @@ const App = () => {
             <NoMatchPage />
           </Route>
         </Switch>
+
+      {/* modals */}
+      <FilterModal />
+      <DeleteItemModal />
       </Theme>
     </Router>
   );

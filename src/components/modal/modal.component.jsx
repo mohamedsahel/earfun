@@ -1,15 +1,15 @@
 import React from 'react'
 
-import * as S from './light-box.styles'
+import * as S from './modal.styles'
 
-const LightBox = ({ children }) => {
+const Modal = ({ children }) => {
     return (
         <S.Background>
             <S.Container>
-        {children}
+                {children}
             </S.Container>
         </S.Background>
     )
 }
 
-export default LightBox
+export default Modal

@@ -11,7 +11,7 @@ export const _Icon = styled(Icon)`
 `
 
 export const Count = styled.div`
-    padding: 0.15rem 0.5rem 0.15rem 0.5rem;
+    padding: 0.15rem 0.55rem 0.15rem 0.55rem;
     font-size: 1rem;
     font-weight: 500;
     background: ${p => p.theme.colors.red};

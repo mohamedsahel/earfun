@@ -3,12 +3,12 @@ import { useSelector } from 'react-redux'
 
 import { isFilteringSelector } from "../../selectors/filter.selectors";
 
-import FilterBox from './filter-box.component'
+import FilterModal from './filter-modal.component'
 
 
-const FilterBoxContainer = props => {
+const FilterModalContainer = props => {
     const isFiltering = useSelector(isFilteringSelector)
-    return isFiltering ? <FilterBox {...props} /> : null
+    return isFiltering ? <FilterModal {...props} /> : null
 }
 
-export default FilterBoxContainer
+export default FilterModalContainer
