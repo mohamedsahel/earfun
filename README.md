@@ -1,6 +1,7 @@
-To see this project live (in the development mode); go to [earfun.herokuapp.com](https://earfun.herokuapp.com).
+### production mode
+To see this project live: go to [earfun.herokuapp.com](https://earfun.herokuapp.com) <br>
 
-
-To see it in the develoment mode :
-1- run "yarn start" in the project directory
+### development mode
+To see it in the development mode :<br>
+1- run `yarn start` in the project directory<br>
 2- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
