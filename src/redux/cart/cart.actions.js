@@ -1,24 +1,27 @@
 import Types from './cart.types'
-import { toggleSnackbar } from '../snackbar/snackbar.actions'
+import { showSnackbar, hideSnackbar } from '../snackbar/snackbar.actions'
 
 export const addItem = item => ({
     type: Types.ADD_ITEM,
     payload: item
 })
 
+
 const showHideSnackbar = (dispatch, message) => {
-    const showSnackbar = new Promise(resolve => {
+    const showSnackbarAsync = new Promise(resolve => {
         setTimeout(() => {
-            dispatch(toggleSnackbar(message))
+            dispatch(showSnackbar(message))
             resolve()
         }, 300)
     })
     
-    showSnackbar.then(() => setTimeout(() => dispatch(toggleSnackbar(message)), 4000))
+    showSnackbarAsync.then(() => setTimeout(() => dispatch(hideSnackbar()), 4000))
     
 }
 
-export const addItemAsync = item => dispatch => {
+export const addItemAsync = item => (dispatch, getState) => {
+    if(getState().snackbar.isShown) dispatch(hideSnackbar()) 
+
     dispatch(addItem(item))
     showHideSnackbar(dispatch, 'Item successfuly added to your bag')
 }
@@ -33,10 +36,15 @@ export const changeItemCount = (itemId, amount) => ({
 })
 
 
-export const startClearItem = (item) => ({
+export const startClearItemAsync = (item) => ({
     type: Types.START_CLEAR_ITEM,
     payload: item
 })
+
+export const startClearItem = item => (dispatch, getState) => {
+    if(getState().snackbar.isShown) dispatch(hideSnackbar()) 
+    dispatch(startClearItemAsync(item))
+}
 
 export const clearItem = itemId => ({
     type: Types.CLEAR_ITEM,
@@ -63,13 +71,6 @@ export const changeItemCountAsync = (itemId, amount) => (dispatch, getState) => 
         dispatch(changeItemCount(itemId, amount))
     }
 }
-
-
-export const applyCoupon = couponCode => ({
-    type: Types.APPLY_COUPON,
-    payload: couponCode
-})
-
 
 export const clearCart = () => ({
     type: Types.CLEAR_CART

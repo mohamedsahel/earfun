@@ -43,7 +43,6 @@ const filterReducer = (state=INITIAL_STATE, action) => {
         case Types.CANCEL_FILTERING:
             return {
                 ...state,
-                filters: { ...state.applyedFilters },
                 isFiltering: false
             } 
             

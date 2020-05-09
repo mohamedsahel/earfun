@@ -52,12 +52,6 @@ const cartReducer = (state=INITIAL_STATE, action) => {
                 ...state,
                 itemToClear: null
             }
-
-        case types.APPLY_COUPON : 
-            return {
-                ...state,
-                coupon: getCoupon(payload, VALIDE_COUPONS)
-            }
         
         case types.CLEAR_CART : 
             return {

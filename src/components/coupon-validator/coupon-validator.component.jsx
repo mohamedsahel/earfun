@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
-import { applyCoupon } from '../../redux/cart/cart.actions'
+import { applyCoupon } from '../../redux/coupon/coupon.actions'
 import { couponSelector } from '../../selectors/cart.selectors'
 
 import * as S from './coupon-validator.styles'

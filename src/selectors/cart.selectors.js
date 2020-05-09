@@ -26,19 +26,16 @@ export const itemToClearSelector = createSelector(
 
 
 // coupon
-export const couponSelector = createSelector(
-    cartSelector,
-    cart => cart.coupon
-)
+export const couponSelector = state => state.coupon
 
 // order card
 export const cartItemsTotalSelector = createSelector(
-    [cartSelector, cartItemsSelector],
-    (cart, items) => {
+    [couponSelector, cartItemsSelector],
+    (coupon, items) => {
         const originTotal = items.reduce((acc, item) => acc + getDiscountedValue(item.price * item.count,  item.discount) 
         , 0)
 
-        return cart.coupon && cart.coupon.discount ? getDiscountedValue(originTotal, cart.coupon.discount)
+        return coupon && coupon.discount ? getDiscountedValue(originTotal, coupon.discount)
         : originTotal
     }
 )

@@ -9,10 +9,16 @@ const INITIAL_STATE = {
 
 const snackbarReducer = (state=INITIAL_STATE, { type, payload }) => {
     switch(type) {
-        case Types.TOGGLE_SNACKBAR:
+        case Types.SHOW_SNACKBAR:
             return {
-                isShown: !state.isShown,
+                isShown: true,
                 message: payload
+            }
+
+        case Types.HIDE_SNACKBAR:
+            return {
+                ...state,
+                isShown: false
             }
 
         default:

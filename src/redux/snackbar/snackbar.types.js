@@ -1,6 +1,7 @@
 
 const snackbarActionsTypes = {
-    TOGGLE_SNACKBAR: 'TOGGLE_SNACKBAR',
+    SHOW_SNACKBAR: 'SHOW_SNACKBAR',
+    HIDE_SNACKBAR: 'HIDE_SNACKBAR',
 }
 
 export default snackbarActionsTypes
